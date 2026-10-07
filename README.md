@@ -18,7 +18,7 @@ The application path then deals with a different problem: the gap between having
 
 ## Run locally
 
-Requires **Node.js 24 or later**, npm and access to this private repository.
+Requires **Node.js 24 or later** and npm.
 
 Clone using GitHub Desktop, or select **Code → Download ZIP** on GitHub and extract it.
 

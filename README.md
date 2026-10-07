@@ -159,6 +159,14 @@ The full reasoning is documented in `SKILL-MAP.md`.
 
 The current mappings are intentionally provisional. They exist to make the prototype testable, not to pretend that skill inference has been solved.
 
+## Tools Used
+
+- **Claude:** interrogating the data pack during discovery, understanding how the records related to one another, exploring low-fidelity wireframes, and implementing the finished designs in high fidelity.
+- **Mobbin:** researching interface patterns in adjacent applications and adapting useful components and interactions into a cohesive experience for this brief.
+- **Figma:** research, design and component creation. Figma AI helped populate components and tables I had designed with data-pack content, using screenshots of Claude’s wireframes as a reference.
+- **Codex:** reviewing the code produced during implementation.
+- **GitHub and GitHub Desktop:** hosting and sharing the repository through GitHub, and managing new commits and version history through GitHub Desktop.
+
 ## Where AI helped, and where I took the work back
 
 I used ChatGPT and Claude mainly to help interrogate the data pack, understand its structure, explore possible directions and accelerate implementation.

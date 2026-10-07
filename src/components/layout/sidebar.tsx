@@ -14,6 +14,8 @@ interface NavItem {
   tooltip?: boolean;
   icon: IconName;
   kind: 'link' | 'button';
+  /** Core mobile destinations; More reserves a place for future options. */
+  mobile?: boolean;
   /** Starts a new group: a rule above it on desktop. */
   divided?: boolean;
   /** Pinned to the foot of the sidebar on desktop. */
@@ -26,15 +28,15 @@ interface NavItem {
  * place rather than going somewhere.
  */
 const ITEMS: NavItem[] = [
-  { id: 'home', label: 'Home', icon: 'home', kind: 'link' },
+  { id: 'home', label: 'Home', icon: 'home', kind: 'link', mobile: true },
   { id: 'courses', label: 'Courses', icon: 'book_4', kind: 'link' },
   { id: 'assessments', label: 'Assessments', icon: 'box_edit', kind: 'link' },
   { id: 'events', label: 'Events', icon: 'event', kind: 'link' },
-  { id: 'openings', label: 'All Openings', icon: 'work', kind: 'link', divided: true },
-  { id: 'application-paths', label: 'Application Paths', icon: 'conversion_path', kind: 'link' },
-  { id: 'application-tracker', label: 'Application Tracker', icon: 'outbox', kind: 'link' },
+  { id: 'openings', label: 'All Openings', icon: 'work', kind: 'link', divided: true, mobile: true },
+  { id: 'application-paths', label: 'Application Paths', icon: 'conversion_path', kind: 'link', mobile: true },
+  { id: 'application-tracker', label: 'Application Tracker', icon: 'outbox', kind: 'link', mobile: true },
   { id: 'notifications', label: 'Notifications', icon: 'notifications', kind: 'button', utility: true },
-  { id: 'more', label: 'More', icon: 'more_horiz', kind: 'button', utility: true, tooltip: false },
+  { id: 'more', label: 'More', icon: 'more_horiz', kind: 'button', utility: true, tooltip: false, mobile: true },
 ];
 
 const firstUtility = ITEMS.findIndex((item) => item.utility);
@@ -44,8 +46,8 @@ const itemClass =
 
 /**
  * A rail on desktop, as the Figma draws it. Below md the same list becomes a
- * tab bar across the foot of the screen: the logo and group rule drop out, and
- * the items share the width evenly.
+ * tab bar across the foot of the screen: Home, All Openings, Application Paths,
+ * Application Tracker and the inactive More placeholder share the width evenly.
  */
 export function Sidebar({ current }: { current: string }) {
   // Tooltips sit beside the rail on desktop, and above the tab bar below md.
@@ -54,7 +56,7 @@ export function Sidebar({ current }: { current: string }) {
   return (
     <nav
       aria-label="Main"
-      className="pointer-events-auto flex h-14 items-center rounded-3xl border border-line bg-surface px-2 shadow-raised md:h-full md:w-20 md:flex-col md:gap-4 md:border-0 md:px-5 md:py-6 md:shadow-none"
+      className="pointer-events-auto flex h-14 items-center rounded-2xl border border-line bg-surface px-2 shadow-raised md:h-full md:w-20 md:rounded-3xl md:flex-col md:gap-4 md:border-0 md:px-5 md:py-6 md:shadow-none"
     >
       <span className="relative hidden size-10 shrink-0 md:block">
         {/* Positioned as the Figma frames it: inset 15.58% 10% 16.86% 7.69%. */}
@@ -100,6 +102,7 @@ export function Sidebar({ current }: { current: string }) {
               key={item.id}
               className={cn(
                 'min-w-0 flex-1 md:flex-none',
+                !item.mobile && 'hidden md:block',
                 // The Figma's rule takes no height: a 1px line 16px below the item above.
                 item.divided &&
                   'md:relative md:mt-4 md:before:absolute md:before:-top-[17px] md:before:h-px md:before:w-10 md:before:bg-line',

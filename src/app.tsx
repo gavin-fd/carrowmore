@@ -61,7 +61,6 @@ export function App() {
               ? 'openings'
               : ''
       }
-      headerClassName={applicationPath || applicationTracker ? 'pt-6' : undefined}
       breadcrumb={breadcrumb}
     >
       <Routes key={pathname}>

@@ -12,28 +12,34 @@ interface PageHeaderProps {
   breadcrumb: Crumb[];
   /** Content has scrolled up beneath the header. */
   contentBeneath: boolean;
-  className?: string;
   ref?: Ref<HTMLElement>;
 }
 
 /**
  * Sticky at the top of the main column. At rest it sits on a rule; once
  * content scrolls beneath it the rule fades out, and the canvas fading over
- * the header's bottom 26.87% takes over as the edge.
+ * the gradient's bottom 26.87% takes over as the edge. At the tablet breakpoint
+ * (md up to lg), its separate layer extends 12px when scrolled, giving 32px of
+ * visual bottom padding. Desktop and mobile retain the original gradient
+ * height; the resting layout, breadcrumb and rule positions are unchanged.
  *
  * The rule is drawn outside the header's box, so it takes no height and its
  * fade cannot shift the page. It leaves quickly (75ms), before content can be
  * seen through it, and returns more gently (150ms).
  */
-export function PageHeader({ breadcrumb, contentBeneath, className, ref }: PageHeaderProps) {
+export function PageHeader({ breadcrumb, contentBeneath, ref }: PageHeaderProps) {
   return (
     <header
       ref={ref}
-      className={cn(
-        'sticky top-0 z-10 mx-6 bg-linear-to-t from-canvas/0 to-canvas to-[26.87%] px-2 pt-8 pb-5',
-        className,
-      )}
+      className="sticky top-0 z-10 mx-6 px-2 pt-8 pb-5 lg:bg-linear-to-t lg:from-canvas/0 lg:to-canvas lg:to-[26.87%]"
     >
+      <span
+        aria-hidden="true"
+        className={cn(
+          'pointer-events-none absolute inset-x-0 top-0 bottom-0 -z-10 bg-linear-to-t from-canvas/0 to-canvas to-[26.87%] lg:hidden',
+          contentBeneath && 'md:-bottom-3',
+        )}
+      />
       <nav aria-label="Breadcrumb">
         <ol className="flex flex-wrap items-center gap-2 text-base leading-none text-ink-secondary">
           {breadcrumb.map((crumb, i) => (

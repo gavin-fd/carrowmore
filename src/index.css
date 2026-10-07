@@ -78,8 +78,8 @@
 
   --shadow-raised: 0 1px 4px 0 rgb(12 12 13 / 0.05); /* Drop Shadow/100 */
 
-  /* Below md, the space the fixed tab bar takes: a 56px bar plus its 16px inset. */
-  --spacing-tabbar: 4.5rem;
+  /* Below md, the space the fixed tab bar takes: a 56px bar plus its 8px inset. */
+  --spacing-tabbar: 4rem;
 
   --animate-tooltip-in: tooltip-in 150ms ease-out;
   --animate-pop-in: pop-in 150ms ease-out;

@@ -9,7 +9,6 @@ interface AppShellProps {
   /** Sidebar item for the current section. */
   current: string;
   breadcrumb: Crumb[];
-  headerClassName?: string;
   children: ReactNode;
 }
 
@@ -19,7 +18,7 @@ interface AppShellProps {
  * sidebar is a tab bar fixed to the foot of the screen, and the main column
  * keeps clear of it.
  */
-export function AppShell({ current, breadcrumb, headerClassName, children }: AppShellProps) {
+export function AppShell({ current, breadcrumb, children }: AppShellProps) {
   const headerRef = useRef<HTMLElement>(null);
   const gapRef = useRef<HTMLDivElement>(null);
   const [contentBeneath, setContentBeneath] = useState(false);
@@ -31,18 +30,33 @@ export function AppShell({ current, breadcrumb, headerClassName, children }: App
     const header = headerRef.current;
     const gap = gapRef.current;
     if (!header || !gap) return;
-    const edge = header.offsetHeight + RULE_LEAD;
-    const observer = new IntersectionObserver(
-      ([entry]) => setContentBeneath(!entry.isIntersecting && entry.boundingClientRect.top < edge),
-      { rootMargin: `-${edge}px 0px 0px 0px` },
-    );
-    observer.observe(gap);
-    return () => observer.disconnect();
-  }, [headerClassName]);
+    let observer: IntersectionObserver | undefined;
+    let observedHeight = -1;
+    const observeGap = () => {
+      const height = header.offsetHeight;
+      if (height === observedHeight) return;
+      observedHeight = height;
+      observer?.disconnect();
+      const edge = height + RULE_LEAD;
+      observer = new IntersectionObserver(
+        ([entry]) => setContentBeneath(!entry.isIntersecting && entry.boundingClientRect.top < edge),
+        { rootMargin: `-${edge}px 0px 0px 0px` },
+      );
+      observer.observe(gap);
+    };
+    observeGap();
+    // Wrapped breadcrumbs and viewport changes must use the current header height.
+    const resizeObserver = new ResizeObserver(observeGap);
+    resizeObserver.observe(header);
+    return () => {
+      observer?.disconnect();
+      resizeObserver.disconnect();
+    };
+  }, []);
 
   return (
     <div className="flex min-h-dvh">
-      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 p-4 md:pointer-events-auto md:sticky md:inset-auto md:top-0 md:z-auto md:h-dvh md:shrink-0 md:pr-0">
+      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 p-2 md:p-4 md:pointer-events-auto md:sticky md:inset-auto md:top-0 md:z-auto md:h-dvh md:shrink-0 md:pr-0">
         <Sidebar current={current} />
       </div>
       <div className="flex min-w-0 flex-1 flex-col max-md:pb-tabbar">
@@ -50,7 +64,6 @@ export function AppShell({ current, breadcrumb, headerClassName, children }: App
           ref={headerRef}
           breadcrumb={breadcrumb}
           contentBeneath={contentBeneath}
-          className={headerClassName}
         />
         <div ref={gapRef} aria-hidden="true" className="h-8 shrink-0" />
         {children}

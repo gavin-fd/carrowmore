@@ -1,6 +1,6 @@
 # Carrowmore
 
-**[Figma design](https://www.figma.com/design/qLgNrSalE6KPHeLjS2WueH/Carrowmore?node-id=0-1)** · **[Loom walkthrough](https://www.loom.com/share/796deb8f0f1d49c09cc4d3602c465ae7)**
+**[Live prototype](https://gavin-fd.github.io/carrowmore/)** · **[Figma design](https://www.figma.com/design/qLgNrSalE6KPHeLjS2WueH/Carrowmore?node-id=0-1)** · **[Loom walkthrough](https://www.loom.com/share/796deb8f0f1d49c09cc4d3602c465ae7)**
 
 A career-transition prototype for the fictional Carrowmore Light Authority, where 340 lighthouse keepers face automation.
 
@@ -301,7 +301,10 @@ Typography uses Inter. Icons use Google Material Symbols Outlined.
 | --- | --- |
 | `npm run typecheck` | Check application and pipeline types |
 | `npm run build` | Type-check and build into `dist/` |
+| `npm run build:pages` | Build for GitHub Pages, including direct links to each screen |
 | `npm run preview` | Serve the production build locally |
 | `npm run derive` | Regenerate view models and the skill-map document |
 
-For static hosting, publish `dist/` and configure application routes to fall back to `index.html`.
+GitHub Pages deploys automatically when changes are pushed to `main`, using `.github/workflows/deploy-pages.yml`. The Pages build includes a static entry point for each screen so shared links and refreshes work.
+
+For other static hosts, use `npm run build`, publish `dist/` and configure application routes to fall back to `index.html`.

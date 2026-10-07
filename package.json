@@ -11,6 +11,7 @@
     "derive": "node scripts/derive.ts && node scripts/skill-map.ts && node scripts/application-profile.ts",
     "typecheck": "tsc -b",
     "build": "tsc -b && vite build",
+    "build:pages": "npm run build -- --base=/carrowmore/ && node scripts/prepare-pages.ts",
     "preview": "vite preview"
   },
   "dependencies": {

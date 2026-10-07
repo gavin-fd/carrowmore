@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
+import { useReducedMotion } from 'motion/react';
 import { Icon } from '@/components/icon';
+import { Toast } from '@/components/ui/toast';
+import { usePrototypeSkills } from '@/features/profile/prototype-skills';
 import { fitSummary } from '@/data/role';
 import { view } from '@/data/view';
 import type { View } from '@/domain/schema';
@@ -69,6 +72,12 @@ type Step = 'evidence' | 'update' | 'sent';
 
 export function RolePage() {
   const [step, setStep] = useState<Step | null>(null);
+  const { removedIds, removeSkill } = usePrototypeSkills();
+  const skillsHeading = useRef<HTMLHeadingElement>(null);
+  const reducedMotion = useReducedMotion();
+  const pendingRemoval = useRef<View['skills'][number] | null>(null);
+  const [notice, setNotice] = useState<{ label: string; open: boolean }>();
+  const profileSkills = view.skills.filter((skill) => skill.onProfile && !removedIds.includes(skill.id));
   // A dialog animating out keeps the handlers of its last open render, so it
   // reads the step from here rather than from that render.
   const stepRef = useRef(step);
@@ -79,7 +88,7 @@ export function RolePage() {
   const [shownId, setShownId] = useState<string>();
   const shown = view.skills.find((s) => s.id === shownId);
   const claim = view.claims.find((c) => c.id === shown?.claim);
-  const related = view.skills.filter((s) => s.onProfile && s.claim === shown?.claim && s.id !== shown?.id);
+  const related = profileSkills.filter((s) => s.claim === shown?.claim && s.id !== shown?.id);
 
   const openEvidence = (id: string) => {
     setShownId(id);
@@ -92,8 +101,19 @@ export function RolePage() {
   // closes, focus goes back to the chip for the skill it was about.
   const returnFocus = (event: Event) => {
     event.preventDefault();
-    if (stepRef.current) return;
-    document.querySelector<HTMLElement>(`[data-skill="${shownId}"]`)?.focus();
+    if (stepRef.current || pendingRemoval.current) return;
+    const target = document.querySelector<HTMLElement>(`[data-skill="${shownId}"]`) ?? skillsHeading.current;
+    target?.focus({ preventScroll: true });
+  };
+
+  // Wait for the shared dialog's exit before removing the chip and showing feedback.
+  const finishRemoval = () => {
+    const skill = pendingRemoval.current;
+    if (!skill) return;
+    pendingRemoval.current = null;
+    removeSkill(skill.id);
+    setNotice({ label: skill.label, open: true });
+    requestAnimationFrame(() => skillsHeading.current?.focus({ preventScroll: true }));
   };
 
   return (
@@ -114,7 +134,8 @@ export function RolePage() {
         />
         <FitSummaryCard className="max-lg:order-first lg:col-start-2 lg:row-start-1" />
         <SkillsCard
-          skills={view.skills.filter((skill) => skill.onProfile)}
+          skills={profileSkills}
+          headingRef={skillsHeading}
           onSelect={openEvidence}
           className="lg:col-start-2 lg:row-start-2"
         />
@@ -131,6 +152,11 @@ export function RolePage() {
           related={related}
           onSelectSkill={setShownId}
           onDoneMore={() => setStep('update')}
+          onRemove={() => {
+            pendingRemoval.current = shown;
+            setStep(null);
+          }}
+          onExitComplete={finishRemoval}
         />
       )}
       {shown && (
@@ -150,6 +176,20 @@ export function RolePage() {
         />
       )}
       <RequestSentDialog open={step === 'sent'} onOpenChange={close} onCloseAutoFocus={returnFocus} />
+      {notice && (
+        <Toast
+          key={notice.label}
+          open={notice.open}
+          onOpenChange={(open) => setNotice((current) => current && { ...current, open })}
+          message={<>{notice.label} has been removed from your profile.</>}
+          action="Manage skills"
+          actionDescription="Return to your skills and experience"
+          onAction={() => {
+            skillsHeading.current?.scrollIntoView({ behavior: reducedMotion ? 'auto' : 'smooth', block: 'center' });
+            skillsHeading.current?.focus({ preventScroll: true });
+          }}
+        />
+      )}
     </main>
   );
 }

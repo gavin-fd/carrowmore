@@ -39,6 +39,8 @@
   --color-on-ink: #f3f3f3; /* text/neutral/on-neutral — text on dark pills */
   --color-on-positive: #02542d; /* completed pathway status — text/positive/default */
   --color-positive: #009951; /* request sent — check */
+  --color-danger: #900b09; /* removal confirmation — border and text */
+  --color-danger-wash: #fee9e7; /* background/danger/tertiary */
   --color-positive-wash: #cff7d3; /* background/positive/tertiary-hover */
 
   /* Fit summary card. */
@@ -96,6 +98,11 @@
       transform: translateY(-4px);
     }
   }
+}
+
+@keyframes toast-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
 
 @layer base {

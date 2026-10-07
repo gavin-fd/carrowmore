@@ -1,5 +1,5 @@
-import { useEffect, useId, useLayoutEffect, useRef, useState, type FocusEvent } from 'react';
-import { m, useReducedMotion } from 'motion/react';
+import { useEffect, useId, useLayoutEffect, useRef, useState, type FocusEvent, type Ref } from 'react';
+import { AnimatePresence, m, useIsPresent, useReducedMotion } from 'motion/react';
 import { Chip, chipClass } from '@/components/chip';
 import { Icon } from '@/components/icon';
 import type { View } from '@/domain/schema';
@@ -15,6 +15,24 @@ const EASE = [0.32, 0.72, 0, 1] as const;
 
 type Skill = View['skills'][number];
 
+function SkillContent({ skill, onSelect }: { skill: Skill; onSelect: (id: string) => void }) {
+  const present = useIsPresent();
+  // Exiting chips remain visible for their animation, but can no longer open a dialog.
+  return skill.claim ? (
+    <Chip
+      data-skill={skill.id}
+      aria-haspopup="dialog"
+      aria-hidden={!present}
+      disabled={!present}
+      onClick={() => onSelect(skill.id)}
+    >
+      {skill.label}
+    </Chip>
+  ) : (
+    <span className={chipClass}>{skill.label}</span>
+  );
+}
+
 /**
  * The skills on the keeper's profile. Collapses to the Figma's height with a
  * fade and a "Show all" toggle, but only when the chips overflow it — at
@@ -25,9 +43,10 @@ interface SkillsCardProps {
   /** Open the evidence behind a chip. */
   onSelect: (id: string) => void;
   className?: string;
+  headingRef?: Ref<HTMLHeadingElement>;
 }
 
-export function SkillsCard({ skills, onSelect, className }: SkillsCardProps) {
+export function SkillsCard({ skills, onSelect, className, headingRef }: SkillsCardProps) {
   const headingId = useId();
   const listId = useId();
   const contentRef = useRef<HTMLDivElement>(null);
@@ -74,22 +93,25 @@ export function SkillsCard({ skills, onSelect, className }: SkillsCardProps) {
       transition={{ duration: hasMeasured.current && !reduceMotion ? 0.35 : 0, ease: EASE }}
     >
       <div ref={contentRef} className="flex flex-col gap-6 p-5">
-        <h2 id={headingId} className="text-base font-semibold">
+        <h2 ref={headingRef} id={headingId} tabIndex={-1} className="text-base font-semibold outline-none">
           Your skills and experience
         </h2>
         <ul id={listId} className="flex flex-wrap gap-2" onFocus={revealFocused}>
-          {skills.map((skill) => (
-            <li key={skill.id}>
-              {/* Skills no scheme certifies have no logbook claim to open — yet. */}
-              {skill.claim ? (
-                <Chip data-skill={skill.id} aria-haspopup="dialog" onClick={() => onSelect(skill.id)}>
-                  {skill.label}
-                </Chip>
-              ) : (
-                <span className={chipClass}>{skill.label}</span>
-              )}
-            </li>
-          ))}
+          <AnimatePresence initial={false} mode="popLayout">
+            {skills.map((skill) => (
+              <m.li
+                key={skill.id}
+                layout="position"
+                className="relative"
+                initial={false}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: reduceMotion ? 1 : 0.85 }}
+                transition={{ duration: reduceMotion ? 0 : 0.3, ease: EASE }}
+              >
+                <SkillContent skill={skill} onSelect={onSelect} />
+              </m.li>
+            ))}
+          </AnimatePresence>
         </ul>
       </div>
 

@@ -15,6 +15,7 @@ const buttonVariants = cva(
         default: 'bg-action text-on-action hover:bg-action-hover',
         neutral: 'bg-neutral-action text-white hover:bg-neutral-action-hover',
         outline: 'border border-line bg-surface text-ink-strong hover:bg-canvas',
+        'danger-outline': 'border border-danger bg-danger-wash text-danger hover:bg-danger-wash/80',
       },
       size: {
         default: 'h-10 rounded-xl px-5 text-sm',

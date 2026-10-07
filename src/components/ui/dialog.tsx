@@ -18,13 +18,14 @@ const DialogClose = DialogPrimitive.Close;
 interface DialogContentProps extends ComponentProps<typeof DialogPrimitive.Content> {
   /** The Root's open state, so the exit can play before the content unmounts. */
   open: boolean;
+  onExitComplete?: () => void;
 }
 
 const EASE = [0.32, 0.72, 0, 1] as const;
 
-function DialogContent({ open, className, children, ...props }: DialogContentProps) {
+function DialogContent({ open, onExitComplete, className, children, ...props }: DialogContentProps) {
   return (
-    <AnimatePresence>
+    <AnimatePresence onExitComplete={onExitComplete}>
       {open && (
         <DialogPrimitive.Portal forceMount>
           <DialogPrimitive.Overlay asChild forceMount>

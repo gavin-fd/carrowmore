@@ -258,6 +258,8 @@ Courses, assessments, certificate awards, record updates and interview requests 
 
 There is no authentication, database or backend API.
 
+Skill removals and application-path progress are kept for the current browser-tab session. The underlying source records remain unchanged.
+
 The prototype is designed to demonstrate the product logic and interaction model rather than reproduce the operational systems that would sit behind it.
 
 ## Time spent

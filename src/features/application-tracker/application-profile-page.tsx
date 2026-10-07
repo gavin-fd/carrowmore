@@ -8,6 +8,7 @@ import { applicationPathSteps } from '@/data/application-path';
 import { submittedApplication } from '@/features/application-path/prototype-application';
 import { applicationProfile } from '@/data/application-tracker';
 import { view } from '@/data/view';
+import { usePrototypeSkills } from '@/features/profile/prototype-skills';
 import { routes } from '@/lib/routes';
 
 function MetaDivider() {
@@ -27,6 +28,7 @@ function MetaDivider() {
 export function ApplicationProfilePage() {
   const { keeper, gradeHistory, recentTraining, pathwaySchemes } = applicationProfile;
   const { completed, awardedYear } = submittedApplication();
+  const { removedIds } = usePrototypeSkills();
   const awardedModules = applicationPathSteps
     .filter((step) => completed.includes(step.id))
     .flatMap((step) => step.modules);
@@ -64,7 +66,9 @@ export function ApplicationProfilePage() {
     ...recentTraining.filter((record) => !awardedModules.includes(record.module)),
   ].slice(0, 6);
   const profileSkills = view.skills.filter(
-    (skill) => skill.onProfile || (skill.claim === 'tower-rescue' && completed.includes('rope-rescue')),
+    (skill) =>
+      !removedIds.includes(skill.id) &&
+      (skill.onProfile || (skill.claim === 'tower-rescue' && completed.includes('rope-rescue'))),
   );
 
   return (

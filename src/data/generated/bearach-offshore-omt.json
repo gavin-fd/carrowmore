@@ -1,0 +1,4247 @@
+{
+  "provenance": {
+    "sources": [
+      {
+        "path": "data/source/keepers.json",
+        "records": 40,
+        "note": "Supplied clean pack, unmodified."
+      },
+      {
+        "path": "data/source/logbook_entries.json",
+        "records": 10627,
+        "note": "Supplied clean pack, unmodified. Routine watchkeeping was already removed by the Authority — about 70% of the raw volume."
+      },
+      {
+        "path": "data/source/certification_schemes.json",
+        "records": 10,
+        "note": "Compiled by the Authority from issuing bodies’ published material. Good, but not authoritative."
+      },
+      {
+        "path": "data/source/carrowmore-array-om-technician.md",
+        "records": 1,
+        "note": "Requirements quoted verbatim. Never paraphrased."
+      },
+      {
+        "path": "reference/nosf_taxonomy.json",
+        "records": 2514,
+        "note": "Read by hand; 11 statements mapped by eye. Not copied into this repository — only the 11 statements used are inlined in mappings.ts."
+      }
+    ],
+    "keepersExamined": 40,
+    "logbookEntriesExamined": 10627,
+    "competencyMappingsHandWritten": 11,
+    "caveat": "Every claim in this file is an inference from records written for another purpose. None of it establishes authorisation. Where a register and a logbook disagree, both are shown and neither is preferred."
+  },
+  "keeper": {
+    "keeper_code": "K0184",
+    "name": "Bearach Ormlaithe",
+    "current_grade": "Keeper Grade I",
+    "date_joined": "2004-01-01",
+    "years_of_service": 22,
+    "postings": [
+      {
+        "station_code": "HUR",
+        "station": "Hurlaven Ness",
+        "station_class": "shore",
+        "from_year": 2004,
+        "to_year": 2007
+      },
+      {
+        "station_code": "TUL",
+        "station": "Tullaghmore Lighthouse",
+        "station_class": "shore",
+        "from_year": 2008,
+        "to_year": 2012
+      },
+      {
+        "station_code": "ARD",
+        "station": "Ardvarra Island",
+        "station_class": "island",
+        "from_year": 2013,
+        "to_year": 2013
+      },
+      {
+        "station_code": "NEV",
+        "station": "Nevisbeg Skerry",
+        "station_class": "rock",
+        "from_year": 2014,
+        "to_year": 2015
+      },
+      {
+        "station_code": "NUA",
+        "station": "Nuallanish Head",
+        "station_class": "shore",
+        "from_year": 2016,
+        "to_year": 2017
+      },
+      {
+        "station_code": "BAL",
+        "station": "Ballaghmona Carrig",
+        "station_class": "rock",
+        "from_year": 2019,
+        "to_year": 2026
+      }
+    ],
+    "station_classes": [
+      "shore",
+      "island",
+      "rock"
+    ]
+  },
+  "skills": [
+    {
+      "id": "diesel-engines",
+      "label": "Diesel engines",
+      "claim": "plant-maintenance",
+      "onProfile": true
+    },
+    {
+      "id": "pumps-and-fluids",
+      "label": "Pumps & fluids",
+      "claim": "plant-maintenance",
+      "onProfile": true
+    },
+    {
+      "id": "planned-maintenance",
+      "label": "Planned maintenance",
+      "claim": "plant-maintenance",
+      "onProfile": true
+    },
+    {
+      "id": "fall-arrest",
+      "label": "Fall arrest",
+      "claim": "work-at-height",
+      "onProfile": true
+    },
+    {
+      "id": "tower-climbing",
+      "label": "Tower climbing",
+      "claim": "work-at-height",
+      "onProfile": true
+    },
+    {
+      "id": "confined-spaces",
+      "label": "Confined spaces",
+      "claim": "enclosed-space",
+      "onProfile": true
+    },
+    {
+      "id": "permit-issue",
+      "label": "Permit issue",
+      "claim": "hv-safety-documentation",
+      "onProfile": true
+    },
+    {
+      "id": "fault-diagnosis",
+      "label": "Fault diagnosis",
+      "claim": "electrical-fault-diagnosis",
+      "onProfile": true
+    },
+    {
+      "id": "isolation-and-earthing",
+      "label": "Isolation & earthing",
+      "claim": "hv-render-safe",
+      "onProfile": true
+    },
+    {
+      "id": "boat-handling",
+      "label": "Boat handling",
+      "claim": "vessel-transfer",
+      "onProfile": false
+    },
+    {
+      "id": "tower-rescue",
+      "label": "Tower rescue",
+      "claim": "tower-rescue",
+      "onProfile": false
+    },
+    {
+      "id": "instructing-others",
+      "label": "Instructing others",
+      "claim": "instructing-others",
+      "onProfile": true
+    },
+    {
+      "id": "operational-record-keeping",
+      "label": "Operational record-keeping",
+      "claim": null,
+      "onProfile": true
+    },
+    {
+      "id": "lone-working",
+      "label": "Lone working",
+      "claim": null,
+      "onProfile": true
+    },
+    {
+      "id": "fault-finding-without-support",
+      "label": "Fault-finding without support",
+      "claim": null,
+      "onProfile": true
+    }
+  ],
+  "skillIndex": [
+    {
+      "id": "diesel-engines",
+      "label": "Diesel engines",
+      "source": "vocabulary"
+    },
+    {
+      "id": "pumps-and-fluids",
+      "label": "Pumps & fluids",
+      "source": "vocabulary"
+    },
+    {
+      "id": "planned-maintenance",
+      "label": "Planned maintenance",
+      "source": "vocabulary"
+    },
+    {
+      "id": "fall-arrest",
+      "label": "Fall arrest",
+      "source": "vocabulary"
+    },
+    {
+      "id": "tower-climbing",
+      "label": "Tower climbing",
+      "source": "vocabulary"
+    },
+    {
+      "id": "confined-spaces",
+      "label": "Confined spaces",
+      "source": "vocabulary"
+    },
+    {
+      "id": "permit-issue",
+      "label": "Permit issue",
+      "source": "vocabulary"
+    },
+    {
+      "id": "fault-diagnosis",
+      "label": "Fault diagnosis",
+      "source": "vocabulary"
+    },
+    {
+      "id": "isolation-and-earthing",
+      "label": "Isolation & earthing",
+      "source": "vocabulary"
+    },
+    {
+      "id": "boat-handling",
+      "label": "Boat handling",
+      "source": "vocabulary"
+    },
+    {
+      "id": "tower-rescue",
+      "label": "Tower rescue",
+      "source": "vocabulary"
+    },
+    {
+      "id": "instructing-others",
+      "label": "Instructing others",
+      "source": "vocabulary"
+    },
+    {
+      "id": "operational-record-keeping",
+      "label": "Operational record-keeping",
+      "source": "vocabulary"
+    },
+    {
+      "id": "lone-working",
+      "label": "Lone working",
+      "source": "vocabulary"
+    },
+    {
+      "id": "fault-finding-without-support",
+      "label": "Fault-finding without support",
+      "source": "vocabulary"
+    },
+    {
+      "id": "switching-principles-and-system-knowledge",
+      "label": "Switching principles and system knowledge",
+      "source": "HVAP-01"
+    },
+    {
+      "id": "isolation-earthing-and-proving-dead",
+      "label": "Isolation, earthing and proving dead",
+      "source": "HVAP-02"
+    },
+    {
+      "id": "safety-documentation-and-permit-issue",
+      "label": "Safety documentation and permit issue",
+      "source": "HVAP-03"
+    },
+    {
+      "id": "authorised-person-practical-assessment",
+      "label": "Authorised Person practical assessment",
+      "source": "HVAP-04"
+    },
+    {
+      "id": "low-voltage-distribution-and-protection",
+      "label": "Low voltage distribution and protection",
+      "source": "MECS-1"
+    },
+    {
+      "id": "rotating-plant-and-generator-control",
+      "label": "Rotating plant and generator control",
+      "source": "MECS-2"
+    },
+    {
+      "id": "diagnostic-practice-and-instrumentation",
+      "label": "Diagnostic practice and instrumentation",
+      "source": "MECS-3"
+    },
+    {
+      "id": "storage-batteries-and-dc-systems",
+      "label": "Storage batteries and DC systems",
+      "source": "MECS-4"
+    },
+    {
+      "id": "electrical-safe-working",
+      "label": "Electrical safe working",
+      "source": "MECS-5"
+    },
+    {
+      "id": "compression-ignition-prime-movers",
+      "label": "Compression ignition prime movers",
+      "source": "MPMC-A"
+    },
+    {
+      "id": "fluid-transfer-and-pumped-systems",
+      "label": "Fluid transfer and pumped systems",
+      "source": "MPMC-B"
+    },
+    {
+      "id": "hydraulic-power-and-control",
+      "label": "Hydraulic power and control",
+      "source": "MPMC-C"
+    },
+    {
+      "id": "planned-maintenance-practice",
+      "label": "Planned maintenance practice",
+      "source": "MPMC-D"
+    },
+    {
+      "id": "sea-survival-and-escape",
+      "label": "Sea survival and escape",
+      "source": "OSSC-SS"
+    },
+    {
+      "id": "fire-prevention-and-response",
+      "label": "Fire prevention and response",
+      "source": "OSSC-FF"
+    },
+    {
+      "id": "first-aid-and-casualty-handling",
+      "label": "First aid and casualty handling",
+      "source": "OSSC-FA"
+    },
+    {
+      "id": "helicopter-landing-area-operations",
+      "label": "Helicopter landing area operations",
+      "source": "OSSC-HL"
+    },
+    {
+      "id": "confined-space-entry-and-rescue",
+      "label": "Confined space entry and rescue",
+      "source": "OSSC-CS"
+    },
+    {
+      "id": "height-safety-and-fall-arrest",
+      "label": "Height safety and fall arrest",
+      "source": "WAHS-1"
+    },
+    {
+      "id": "ladder-and-tower-climbing",
+      "label": "Ladder and tower climbing",
+      "source": "WAHS-2"
+    },
+    {
+      "id": "rope-access-level-1",
+      "label": "Rope access level 1",
+      "source": "WAHS-3"
+    },
+    {
+      "id": "tower-rescue-and-casualty-recovery",
+      "label": "Tower rescue and casualty recovery",
+      "source": "WAHS-4"
+    },
+    {
+      "id": "general-operator-procedures",
+      "label": "General operator procedures",
+      "source": "RCOM-GEN"
+    },
+    {
+      "id": "digital-selective-calling",
+      "label": "Digital selective calling",
+      "source": "RCOM-DSC"
+    },
+    {
+      "id": "meteorological-observing-and-reporting",
+      "label": "Meteorological observing and reporting",
+      "source": "RCOM-MET"
+    },
+    {
+      "id": "aids-to-navigation-telemetry",
+      "label": "Aids to navigation telemetry",
+      "source": "RCOM-AT"
+    },
+    {
+      "id": "coastal-navigation-and-pilotage",
+      "label": "Coastal navigation and pilotage",
+      "source": "SMOC-NV"
+    },
+    {
+      "id": "mooring-and-anchor-work",
+      "label": "Mooring and anchor work",
+      "source": "SMOC-MO"
+    },
+    {
+      "id": "search-patterns-and-on-scene-coordination",
+      "label": "Search patterns and on-scene coordination",
+      "source": "SMOC-SR"
+    },
+    {
+      "id": "masonry-render-and-pointing",
+      "label": "Masonry, render and pointing",
+      "source": "SFAB-M"
+    },
+    {
+      "id": "surface-preparation-and-protective-coatings",
+      "label": "Surface preparation and protective coatings",
+      "source": "SFAB-C"
+    },
+    {
+      "id": "glazing-and-weatherproofing",
+      "label": "Glazing and weatherproofing",
+      "source": "SFAB-G"
+    },
+    {
+      "id": "condition-inspection-and-reporting",
+      "label": "Condition inspection and reporting",
+      "source": "SFAB-I"
+    },
+    {
+      "id": "slinging-and-signalling",
+      "label": "Slinging and signalling",
+      "source": "LOSC-S"
+    },
+    {
+      "id": "appliance-operation",
+      "label": "Appliance operation",
+      "source": "LOSC-A"
+    },
+    {
+      "id": "lift-planning-and-appointed-person-duties",
+      "label": "Lift planning and appointed person duties",
+      "source": "LOSC-P"
+    },
+    {
+      "id": "optical-apparatus-and-light-sources",
+      "label": "Optical apparatus and light sources",
+      "source": "ANSM-O"
+    },
+    {
+      "id": "character-timing-and-flasher-control",
+      "label": "Character, timing and flasher control",
+      "source": "ANSM-C"
+    },
+    {
+      "id": "audible-signals-and-compressed-air-plant",
+      "label": "Audible signals and compressed air plant",
+      "source": "ANSM-A"
+    },
+    {
+      "id": "electronic-aids-and-telemetry",
+      "label": "Electronic aids and telemetry",
+      "source": "ANSM-E"
+    }
+  ],
+  "relevantModules": [
+    {
+      "label": "Fire",
+      "scheme": "OSSC",
+      "module": "OSSC-FF",
+      "moduleName": "Fire prevention and response",
+      "year": 2005
+    },
+    {
+      "label": "Sea Survival",
+      "scheme": "OSSC",
+      "module": "OSSC-SS",
+      "moduleName": "Sea survival and escape",
+      "year": 2020
+    }
+  ],
+  "redactions": [
+    {
+      "field": "date_of_birth",
+      "reason": "No requirement of this role depends on age. The employer asks for medical fitness, which is a separate assessment, so date of birth has no bearing on any claim here and does not travel into the interface."
+    },
+    {
+      "field": "payroll_ref",
+      "reason": "An internal finance identifier. It identifies a person without evidencing anything about their work."
+    },
+    {
+      "field": "contract_type · status · grade_history",
+      "reason": "Employment terms and progression history. Grade follows length of service and the availability of a vacancy, and has never been tied to an assessment of anything — so showing it next to a competence claim would imply a relationship that does not exist."
+    },
+    {
+      "field": "appraisals · station manager notes",
+      "reason": "Not used, and not copied into this repository. They contain illness, bereavement, domestic circumstances and a resolved disciplinary matter. None of it evidences whether somebody can maintain a turbine, and a redeployment screen that surfaced it would do real harm. The clean pack excludes them; this pipeline would exclude them anyway."
+    }
+  ],
+  "role": {
+    "title": "Wind Turbine Technician (Operations & Maintenance)",
+    "employer": "Carrowmore Array Offshore Wind Farm",
+    "pattern": "14 days on / 14 days off, based on the service operations vessel",
+    "source": "data/source/carrowmore-array-om-technician.md"
+  },
+  "headline": {
+    "blocked": true,
+    "statement": "You cannot be mobilised for this role today. One module is the reason: OSSC-FA, first aid and casualty handling.",
+    "secondary": "4 of the 11 things this role asks for appear repeatedly in your work records across 22 years. 2 of those have never been certified by anyone."
+  },
+  "claims": [
+    {
+      "id": "offshore-safety-survival",
+      "label": "Offshore safety and survival certificate",
+      "requirement": {
+        "text": "A valid offshore safety and survival certificate covering sea survival, fire, first aid and working at height. We will pay for renewals but we cannot mobilise you without one.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What we need from you — Essential\"",
+        "class": "certification",
+        "essential": true,
+        "gate": true
+      },
+      "assessment": "gate-missing",
+      "reason": "The employer mandates this certificate and states it blocks mobilisation. 1 of 5 modules are not held (OSSC-FA), so the scheme is incomplete and no valid certificate exists.",
+      "spread": {
+        "records": 13,
+        "direct": 0,
+        "custodial": 0,
+        "adjacent": 13,
+        "firstDate": "2009-02-27",
+        "lastDate": "2024-03-15",
+        "distinctYears": 8,
+        "yearsSpanned": 16,
+        "stations": [
+          "Tullaghmore Lighthouse",
+          "Ardvarra Island",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL004863",
+          "date": "2009-02-27",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Ran the fire drill as a real scenario with smoke, timed the muster and wrote it up.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#002125",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "fire drill"
+        },
+        {
+          "entry_id": "CL004965",
+          "date": "2009-06-14",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Ran the fire drill as a real scenario with smoke, timed the muster and wrote it up.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#005952",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "fire drill"
+        },
+        {
+          "entry_id": "CL005671",
+          "date": "2011-04-22",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Ran the fire drill as a real scenario with smoke, timed the muster and wrote it up.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#004057",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "fire drill"
+        },
+        {
+          "entry_id": "CL005819",
+          "date": "2011-08-27",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Ran the fire drill as a real scenario with smoke, timed the muster and wrote it up.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#008577",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "fire drill"
+        },
+        {
+          "entry_id": "CL006055",
+          "date": "2012-04-04",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Ran the fire drill as a real scenario with smoke, timed the muster and wrote it up.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#003437",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "fire drill"
+        },
+        {
+          "entry_id": "CL006219",
+          "date": "2012-09-16",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Ran the fire drill as a real scenario with smoke, timed the muster and wrote it up.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#009307",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "fire drill"
+        },
+        {
+          "entry_id": "CL006478",
+          "date": "2013-06-18",
+          "station": "Ardvarra Island",
+          "station_code": "ARD",
+          "station_class": "island",
+          "text": "Fire drill held, 1.5 hr.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#005852",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "Fire drill"
+        },
+        {
+          "entry_id": "CL008851",
+          "date": "2020-10-19",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Fire drill held, 0.5 hr.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#36918",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Fire drill"
+        },
+        {
+          "entry_id": "CL008926",
+          "date": "2021-02-01",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Fire drill held, 4 hr.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#40491",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Fire drill"
+        },
+        {
+          "entry_id": "CL009010",
+          "date": "2021-05-03",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Fire drill held, 3 hr.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#43970",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Fire drill"
+        },
+        {
+          "entry_id": "CL009281",
+          "date": "2022-03-13",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Fire drill held, 4 hr.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#2753",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Fire drill"
+        },
+        {
+          "entry_id": "CL009286",
+          "date": "2022-03-19",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Liferaft service date checked.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#2994",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Liferaft"
+        },
+        {
+          "entry_id": "CL009866",
+          "date": "2024-03-15",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Ran the fire drill as a real scenario with smoke, timed the muster and wrote it up.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#29424",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "fire drill"
+        }
+      ],
+      "kinds": [],
+      "summary": {
+        "kinds": 0,
+        "occasions": 0,
+        "firstYear": null,
+        "lastYear": null,
+        "stations": 0
+      },
+      "training": [
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-FF",
+          "module_name": "Fire prevention and response",
+          "year": 2005,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-HL",
+          "module_name": "Helicopter landing area operations",
+          "year": 2005,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-CS",
+          "module_name": "Confined space entry and rescue",
+          "year": 2019,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-SS",
+          "module_name": "Sea survival and escape",
+          "year": 2020,
+          "outcome": "completed"
+        }
+      ],
+      "certifications": [
+        {
+          "scheme": "OSSC",
+          "modules_held": [
+            "OSSC-CS",
+            "OSSC-FF",
+            "OSSC-HL",
+            "OSSC-SS"
+          ],
+          "modules_missing": [
+            "OSSC-FA"
+          ],
+          "complete": false,
+          "awarded_year": 2024,
+          "expires_year": 2028,
+          "valid_2026": false
+        }
+      ],
+      "verified": [
+        {
+          "scheme": "OSSC",
+          "schemeName": "Offshore Safety and Survival Certificate",
+          "module": "OSSC-SS",
+          "module_name": "Sea survival and escape",
+          "year": 2020,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2020. This scheme renews every 4 years, so by its module date this would have lapsed in 2024."
+        },
+        {
+          "scheme": "OSSC",
+          "schemeName": "Offshore Safety and Survival Certificate",
+          "module": "OSSC-FF",
+          "module_name": "Fire prevention and response",
+          "year": 2005,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2005. This scheme renews every 4 years, so by its module date this would have lapsed in 2009."
+        },
+        {
+          "scheme": "OSSC",
+          "schemeName": "Offshore Safety and Survival Certificate",
+          "module": "OSSC-HL",
+          "module_name": "Helicopter landing area operations",
+          "year": 2005,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2005. This scheme renews every 4 years, so by its module date this would have lapsed in 2009."
+        },
+        {
+          "scheme": "OSSC",
+          "schemeName": "Offshore Safety and Survival Certificate",
+          "module": "OSSC-CS",
+          "module_name": "Confined space entry and rescue",
+          "year": 2019,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2019. This scheme renews every 4 years, so by its module date this would have lapsed in 2023."
+        }
+      ],
+      "missingModules": [
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-FA",
+          "module_name": "First aid and casualty handling"
+        }
+      ],
+      "searchedFor": "Logbook references to survival equipment and drills. These can only ever be adjacent: the requirement is a certificate, and no logbook entry can produce one.",
+      "limitations": [
+        "Work records cannot establish certification. Only the issuing body can do that.",
+        "A completed module is not a certificate until every module in the scheme is held.",
+        "The scheme is incomplete, so no valid certificate exists under it."
+      ],
+      "absence": [
+        "OSSC-FA (First aid and casualty handling) is not held."
+      ],
+      "discrepancies": [
+        {
+          "scheme": "OSSC",
+          "certificateRegisterSays": "Awarded 2024, expires 2028.",
+          "trainingRegisterSays": "Latest module completed 2020 (OSSC-SS). Under a 4-year renewal that would have lapsed in 2024."
+        }
+      ],
+      "nosf": {
+        "id": "NOSF-SAF-1511",
+        "statement": "Demonstrate the personal survival techniques applicable to abandonment in a marine environment."
+      }
+    },
+    {
+      "id": "offshore-medical",
+      "label": "Offshore medical fitness",
+      "requirement": {
+        "text": "Offshore medical fitness.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What we need from you — Essential\"",
+        "class": "declaration",
+        "essential": true,
+        "gate": true
+      },
+      "assessment": "no-record",
+      "reason": "The employer asks for a declaration. The Authority holds no file of this kind anywhere in this data pack, so there is nothing to show — neither for nor against.",
+      "spread": {
+        "records": 0,
+        "direct": 0,
+        "custodial": 0,
+        "adjacent": 0,
+        "firstDate": null,
+        "lastDate": null,
+        "distinctYears": 0,
+        "yearsSpanned": 0,
+        "stations": []
+      },
+      "entries": [],
+      "kinds": [],
+      "summary": {
+        "kinds": 0,
+        "occasions": 0,
+        "firstYear": null,
+        "lastYear": null,
+        "stations": 0
+      },
+      "training": [],
+      "certifications": [],
+      "verified": [],
+      "missingModules": [],
+      "searchedFor": "Nothing. The Authority holds no medical data in any file in this pack, so there was nothing to search. This is a gap in the Authority’s records, not in the keeper.",
+      "limitations": [],
+      "absence": [
+        "Nothing material was searched for and not found."
+      ],
+      "discrepancies": []
+    },
+    {
+      "id": "work-at-height",
+      "label": "Working at height",
+      "requirement": {
+        "text": "Climb an 80m tower several times a day and work from the nacelle roof and inside the hub. Comfortable working at height — this is not negotiable and it is the most common reason people do not last.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What the job actually is\" and \"Essential\"",
+        "class": "experience",
+        "essential": true,
+        "gate": false
+      },
+      "assessment": "practised",
+      "reason": "50 work records describe this directly, across 16 separate years and 6 stations (2004–2026). That clears the stated threshold of 10 records, 5 years and 2 stations.",
+      "spread": {
+        "records": 52,
+        "direct": 50,
+        "custodial": 0,
+        "adjacent": 2,
+        "firstDate": "2004-09-26",
+        "lastDate": "2026-10-07",
+        "distinctYears": 16,
+        "yearsSpanned": 23,
+        "stations": [
+          "Hurlaven Ness",
+          "Tullaghmore Lighthouse",
+          "Ardvarra Island",
+          "Nevisbeg Skerry",
+          "Nuallanish Head",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL003444",
+          "date": "2004-09-26",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#009708",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL003650",
+          "date": "2005-06-03",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 2 points.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2005.DAT#005501",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL003713",
+          "date": "2005-08-19",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2005.DAT#008311",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL004449",
+          "date": "2007-12-14",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2007.DAT#012166",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL005085",
+          "date": "2009-09-27",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 2 points.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#009787",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL006465",
+          "date": "2013-06-03",
+          "station": "Ardvarra Island",
+          "station_code": "ARD",
+          "station_class": "island",
+          "text": "Cleaned the lantern glass from the staging.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#005325",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL006522",
+          "date": "2013-08-01",
+          "station": "Ardvarra Island",
+          "station_code": "ARD",
+          "station_class": "island",
+          "text": "Cleaned the lantern glass from the staging.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#007347",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL006637",
+          "date": "2013-12-09",
+          "station": "Ardvarra Island",
+          "station_code": "ARD",
+          "station_class": "island",
+          "text": "Checked the anchor points on the gallery.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#011917",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "anchor points"
+        },
+        {
+          "entry_id": "CL006662",
+          "date": "2014-01-06",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 1 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#119",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL006681",
+          "date": "2014-01-22",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#450",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL006692",
+          "date": "2014-02-04",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#000596",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL006749",
+          "date": "2014-04-07",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#001668",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL006962",
+          "date": "2014-10-04",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 3 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#5255",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL007199",
+          "date": "2015-06-09",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 3 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#12947",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL007712",
+          "date": "2017-02-08",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 3 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34909",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL008427",
+          "date": "2019-05-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Checked the anchor points on the gallery.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#17864",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "anchor points"
+        },
+        {
+          "entry_id": "CL008548",
+          "date": "2019-10-24",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Cleaned the lantern glass from the staging.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#24195",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL008559",
+          "date": "2019-11-02",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Intermittent fault on the gallery lights, watching it.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#24434",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "gallery"
+        },
+        {
+          "entry_id": "CL008571",
+          "date": "2019-11-19",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Cleaned the lantern glass from the staging.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#25129",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL008626",
+          "date": "2020-01-21",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Harness and lanyard inspected. Sound.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#27472",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Harness"
+        },
+        {
+          "entry_id": "CL008808",
+          "date": "2020-08-27",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Cleaned the lantern glass from the staging.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#35097",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL008992",
+          "date": "2021-04-15",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Checked the anchor points on the gallery.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#43342",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "anchor points"
+        },
+        {
+          "entry_id": "CL009016",
+          "date": "2021-05-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Harness and lanyard inspected. Sound.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#44111",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Harness"
+        },
+        {
+          "entry_id": "CL009073",
+          "date": "2021-07-17",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Harness and lanyard inspected. Sound.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#46698",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Harness"
+        },
+        {
+          "entry_id": "CL009165",
+          "date": "2021-11-08",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Up the ladder to the gallery, harness on.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#50732",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "harness"
+        },
+        {
+          "entry_id": "CL009251",
+          "date": "2022-02-05",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Checked the anchor points on the gallery.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#1304",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "anchor points"
+        },
+        {
+          "entry_id": "CL009322",
+          "date": "2022-05-15",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#5053",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL009337",
+          "date": "2022-06-04",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Up the ladder to the gallery, harness on.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#5700",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "harness"
+        },
+        {
+          "entry_id": "CL009418",
+          "date": "2022-09-12",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Harness and lanyard inspected. Sound.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#9331",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Harness"
+        },
+        {
+          "entry_id": "CL009511",
+          "date": "2023-01-26",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Up the ladder to the gallery, harness on.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#14335",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "harness"
+        },
+        {
+          "entry_id": "CL009564",
+          "date": "2023-03-28",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 4 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#16651",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL009644",
+          "date": "2023-06-25",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Harness and lanyard inspected. Sound.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19897",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Harness"
+        },
+        {
+          "entry_id": "CL009667",
+          "date": "2023-07-23",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Harness and lanyard inspected. Sound.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#20917",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Harness"
+        },
+        {
+          "entry_id": "CL009690",
+          "date": "2023-09-05",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Checked the anchor points on the gallery.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22399",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "anchor points"
+        },
+        {
+          "entry_id": "CL009713",
+          "date": "2023-10-02",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Up the ladder to the gallery, harness on.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23408",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "harness"
+        },
+        {
+          "entry_id": "CL009721",
+          "date": "2023-10-09",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Cleaned the lantern glass from the staging.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#23700",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL009745",
+          "date": "2023-11-08",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 1 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#24797",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL009877",
+          "date": "2024-03-25",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#29806",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL009897",
+          "date": "2024-04-21",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 4 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30705",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL009905",
+          "date": "2024-05-04",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31114",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL009972",
+          "date": "2024-07-27",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#34073",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL009987",
+          "date": "2024-08-16",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#34708",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL010031",
+          "date": "2024-10-16",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 4 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#36849",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL010042",
+          "date": "2024-10-27",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#37304",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL010095",
+          "date": "2025-01-03",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Intermittent fault on the gallery lights, watching it.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#39553",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "gallery"
+        },
+        {
+          "entry_id": "CL010131",
+          "date": "2025-02-18",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 2 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41234",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL010198",
+          "date": "2025-05-22",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44718",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL010281",
+          "date": "2025-09-19",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#49002",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL010414",
+          "date": "2026-04-05",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#56312",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL010484",
+          "date": "2026-07-10",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#59961",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        },
+        {
+          "entry_id": "CL010526",
+          "date": "2026-08-24",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Rigged staging round the lantern for the glazing job, tied back at 1 points.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#61643",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "staging"
+        },
+        {
+          "entry_id": "CL010558",
+          "date": "2026-10-07",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63206",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "fall arrest"
+        }
+      ],
+      "kinds": [
+        {
+          "label": "Set up the fall arrest on the vertical ladder and tested it with a dead weight.",
+          "entryIds": [
+            "CL003444",
+            "CL003713",
+            "CL004449",
+            "CL006681",
+            "CL006692",
+            "CL006749",
+            "CL009322",
+            "CL009877",
+            "CL009905",
+            "CL009972",
+            "CL009987",
+            "CL010042",
+            "CL010198",
+            "CL010281",
+            "CL010414",
+            "CL010484",
+            "CL010558"
+          ]
+        },
+        {
+          "label": "Rigged staging round the lantern for the glazing job, tied back at 2 points.",
+          "entryIds": [
+            "CL003650",
+            "CL005085",
+            "CL006662",
+            "CL006962",
+            "CL007199",
+            "CL007712",
+            "CL009564",
+            "CL009745",
+            "CL009897",
+            "CL010031",
+            "CL010131",
+            "CL010526"
+          ]
+        },
+        {
+          "label": "Cleaned the lantern glass from the staging.",
+          "entryIds": [
+            "CL006465",
+            "CL006522",
+            "CL008548",
+            "CL008571",
+            "CL008808",
+            "CL009721"
+          ]
+        },
+        {
+          "label": "Harness and lanyard inspected. Sound.",
+          "entryIds": [
+            "CL008626",
+            "CL009016",
+            "CL009073",
+            "CL009418",
+            "CL009644",
+            "CL009667"
+          ]
+        },
+        {
+          "label": "Checked the anchor points on the gallery.",
+          "entryIds": [
+            "CL006637",
+            "CL008427",
+            "CL008992",
+            "CL009251",
+            "CL009690"
+          ]
+        },
+        {
+          "label": "Up the ladder to the gallery, harness on.",
+          "entryIds": [
+            "CL009165",
+            "CL009337",
+            "CL009511",
+            "CL009713"
+          ]
+        }
+      ],
+      "summary": {
+        "kinds": 6,
+        "occasions": 50,
+        "firstYear": 2004,
+        "lastYear": 2026,
+        "stations": 6
+      },
+      "training": [],
+      "certifications": [],
+      "verified": [],
+      "missingModules": [
+        {
+          "scheme": "WAHS",
+          "module": "WAHS-1",
+          "module_name": "Height safety and fall arrest"
+        },
+        {
+          "scheme": "WAHS",
+          "module": "WAHS-2",
+          "module_name": "Ladder and tower climbing"
+        },
+        {
+          "scheme": "WAHS",
+          "module": "WAHS-3",
+          "module_name": "Rope access level 1"
+        }
+      ],
+      "searchedFor": "Ten patterns across 22 years of prose: fall arrest, harness, staging, anchor points, ladders, and the word aloft.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "No WAHS record of any kind — no certification entry and no training record. Working at Height and Rope Access Scheme is the scheme that would formally evidence this, and this keeper has never been entered into it.",
+        "WAHS-1 (Height safety and fall arrest) is not held.",
+        "WAHS-2 (Ladder and tower climbing) is not held.",
+        "WAHS-3 (Rope access level 1) is not held."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-SAF-1505",
+        "statement": "Undertake work at height using fall protection systems appropriate to the task and to the structure."
+      }
+    },
+    {
+      "id": "tower-rescue",
+      "label": "Rescuing a colleague from height",
+      "requirement": {
+        "text": "Rescue a colleague from the tower if it comes to it.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What the job actually is\"",
+        "class": "experience",
+        "essential": true,
+        "gate": false
+      },
+      "assessment": "adjacent",
+      "reason": "Of 1 matching record, 1 describes neighbouring work. That is not the thing the employer asked for, so it cannot be read as evidence of doing it.",
+      "spread": {
+        "records": 1,
+        "direct": 0,
+        "custodial": 0,
+        "adjacent": 1,
+        "firstDate": "2016-12-15",
+        "lastDate": "2016-12-15",
+        "distinctYears": 1,
+        "yearsSpanned": 1,
+        "stations": [
+          "Nuallanish Head"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL007666",
+          "date": "2016-12-15",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Casualty bag inspected, contents correct.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#32999",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Casualt"
+        }
+      ],
+      "kinds": [],
+      "summary": {
+        "kinds": 0,
+        "occasions": 0,
+        "firstYear": null,
+        "lastYear": null,
+        "stations": 0
+      },
+      "training": [],
+      "certifications": [],
+      "verified": [],
+      "missingModules": [
+        {
+          "scheme": "WAHS",
+          "module": "WAHS-4",
+          "module_name": "Tower rescue and casualty recovery"
+        }
+      ],
+      "searchedFor": "Five patterns for rescue and casualty recovery. Deliberately kept separate from working at height: 69 records of climbing a tower safely do not evidence getting someone else down from one, and letting the strong neighbour carry this claim would be the easiest dishonesty available.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "No WAHS record of any kind — no certification entry and no training record. Working at Height and Rope Access Scheme is the scheme that would formally evidence this, and this keeper has never been entered into it.",
+        "WAHS-4 (Tower rescue and casualty recovery) is not held.",
+        "Searched all 368 of this keeper’s logbook entries against 3 patterns for the work itself. No match. Absence of a written record is not evidence that the work was never done — roughly 70% of the raw logs were routine watchkeeping and were removed before this pack was produced."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-SAF-1508",
+        "statement": "Effect the recovery of a suspended operative from a rope access system."
+      }
+    },
+    {
+      "id": "enclosed-space",
+      "label": "Working in enclosed spaces",
+      "requirement": {
+        "text": "Comfortable working at height, in enclosed spaces, and on a small boat in a swell.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What we need from you — Essential\"",
+        "class": "experience",
+        "essential": true,
+        "gate": false
+      },
+      "assessment": "practised",
+      "reason": "10 work records describe this directly, across 5 separate years and 3 stations (2010–2026). That clears the stated threshold of 10 records, 5 years and 2 stations.",
+      "spread": {
+        "records": 10,
+        "direct": 10,
+        "custodial": 0,
+        "adjacent": 0,
+        "firstDate": "2010-11-10",
+        "lastDate": "2026-12-15",
+        "distinctYears": 5,
+        "yearsSpanned": 17,
+        "stations": [
+          "Tullaghmore Lighthouse",
+          "Nevisbeg Skerry",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL005496",
+          "date": "2010-11-10",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Bottom-end knock on no 2, dropped the sump and found 1 big-end shells scored.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#010874",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL005530",
+          "date": "2010-12-08",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Bottom-end knock on no 2, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#011871",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL007177",
+          "date": "2015-05-20",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Bottom-end knock on NO.2, dropped the sump and found 1 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#12224",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL007283",
+          "date": "2015-09-09",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Bottom-end knock on No.1, dropped the sump and found 2 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#16271",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL009452",
+          "date": "2022-10-23",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Fuel transferred, one drum to the day tank.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#10854",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "tank"
+        },
+        {
+          "entry_id": "CL009472",
+          "date": "2022-11-23",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on no 2, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11953",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL010312",
+          "date": "2025-11-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on No.2, dropped the sump and found 2 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#50667",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL010536",
+          "date": "2026-09-14",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on NO.2, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62348",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL010589",
+          "date": "2026-11-19",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on no.1, dropped the sump and found 2 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#64873",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "sump"
+        },
+        {
+          "entry_id": "CL010614",
+          "date": "2026-12-15",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on no 1, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#65781",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "sump"
+        }
+      ],
+      "kinds": [
+        {
+          "label": "Bottom-end knock on no 2, dropped the sump and found 3 big-end shells scored.",
+          "entryIds": [
+            "CL005530",
+            "CL009472",
+            "CL010536",
+            "CL010614"
+          ]
+        },
+        {
+          "label": "Bottom-end knock on No.1, dropped the sump and found 2 big-end shells scored.",
+          "entryIds": [
+            "CL007283",
+            "CL010312",
+            "CL010589"
+          ]
+        },
+        {
+          "label": "Bottom-end knock on no 2, dropped the sump and found 1 big-end shells scored.",
+          "entryIds": [
+            "CL005496",
+            "CL007177"
+          ]
+        },
+        {
+          "label": "Fuel transferred, one drum to the day tank.",
+          "entryIds": [
+            "CL009452"
+          ]
+        }
+      ],
+      "summary": {
+        "kinds": 4,
+        "occasions": 10,
+        "firstYear": 2010,
+        "lastYear": 2026,
+        "stations": 3
+      },
+      "training": [
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-FF",
+          "module_name": "Fire prevention and response",
+          "year": 2005,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-HL",
+          "module_name": "Helicopter landing area operations",
+          "year": 2005,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-CS",
+          "module_name": "Confined space entry and rescue",
+          "year": 2019,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "OSSC",
+          "module": "OSSC-SS",
+          "module_name": "Sea survival and escape",
+          "year": 2020,
+          "outcome": "completed"
+        }
+      ],
+      "certifications": [
+        {
+          "scheme": "OSSC",
+          "modules_held": [
+            "OSSC-CS",
+            "OSSC-FF",
+            "OSSC-HL",
+            "OSSC-SS"
+          ],
+          "modules_missing": [
+            "OSSC-FA"
+          ],
+          "complete": false,
+          "awarded_year": 2024,
+          "expires_year": 2028,
+          "valid_2026": false
+        }
+      ],
+      "verified": [
+        {
+          "scheme": "OSSC",
+          "schemeName": "Offshore Safety and Survival Certificate",
+          "module": "OSSC-CS",
+          "module_name": "Confined space entry and rescue",
+          "year": 2019,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2019. This scheme renews every 4 years, so by its module date this would have lapsed in 2023."
+        }
+      ],
+      "missingModules": [],
+      "searchedFor": "Seven patterns: confined, tank, sump, void, manhole, cistern, and gas testing.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "Nothing material was searched for and not found."
+      ],
+      "discrepancies": [
+        {
+          "scheme": "OSSC",
+          "certificateRegisterSays": "Awarded 2024, expires 2028.",
+          "trainingRegisterSays": "Latest module completed 2020 (OSSC-SS). Under a 4-year renewal that would have lapsed in 2024."
+        }
+      ],
+      "nosf": {
+        "id": "NOSF-SAF-1509",
+        "statement": "Enter and work within enclosed or restricted spaces under a regime of atmospheric monitoring and continuous attendance."
+      }
+    },
+    {
+      "id": "plant-maintenance",
+      "label": "Maintaining plant you were responsible for",
+      "requirement": {
+        "text": "Hands-on mechanical or electrical maintenance experience on plant you were responsible for. We do not mind what kind of plant. [Delighted by] anyone who has maintained generating plant in a place where the nearest spare part was a boat ride away.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"Essential\" and \"We would be delighted by\"",
+        "class": "experience",
+        "essential": true,
+        "gate": false
+      },
+      "assessment": "practised",
+      "reason": "47 work records describe this directly, across 16 separate years and 5 stations (2004–2026). That clears the stated threshold of 10 records, 5 years and 2 stations.",
+      "spread": {
+        "records": 47,
+        "direct": 47,
+        "custodial": 0,
+        "adjacent": 0,
+        "firstDate": "2004-01-03",
+        "lastDate": "2026-12-15",
+        "distinctYears": 16,
+        "yearsSpanned": 23,
+        "stations": [
+          "Hurlaven Ness",
+          "Tullaghmore Lighthouse",
+          "Nevisbeg Skerry",
+          "Nuallanish Head",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL003194",
+          "date": "2004-01-03",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Set the timing on no.1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#000098",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL003299",
+          "date": "2004-05-06",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#004526",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL005178",
+          "date": "2009-12-27",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2009.DAT#013126",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL005488",
+          "date": "2010-10-27",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Overhauled the foam installation and proved the induction rate on test.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#010468",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL005496",
+          "date": "2010-11-10",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Bottom-end knock on no 2, dropped the sump and found 1 big-end shells scored.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#010874",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL005530",
+          "date": "2010-12-08",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Bottom-end knock on no 2, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#011871",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL005554",
+          "date": "2011-01-05",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Overhauled the foam installation and proved the induction rate on test.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#000178",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL005940",
+          "date": "2011-12-27",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Engine room fire in the no 2 set, hit it with foam and shut off the fuel. Out in minutes.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#012945",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "no 2 set"
+        },
+        {
+          "entry_id": "CL005995",
+          "date": "2012-02-13",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Overhauled the foam installation and proved the induction rate on test.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#001591",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL006181",
+          "date": "2012-08-04",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Started no 1 set and ran on load 4 hrs.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#007745",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "no 1 set"
+        },
+        {
+          "entry_id": "CL006237",
+          "date": "2012-10-12",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Overhauled the foam installation and proved the induction rate on test.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#010274",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL006301",
+          "date": "2012-12-16",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Overhauled the foam installation and proved the induction rate on test.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2012.DAT#012681",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL006680",
+          "date": "2014-01-21",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Overhauled the foam installation and proved the induction rate on test.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#431",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL006702",
+          "date": "2014-02-20",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Injectors off no.2 and pop-tested, two were dribbling. Reconditioned and refitted.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#000902",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Injector"
+        },
+        {
+          "entry_id": "CL006755",
+          "date": "2014-04-11",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Injectors off no.1 and pop-tested, two were dribbling. Reconditioned and refitted.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#001749",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Injector"
+        },
+        {
+          "entry_id": "CL006777",
+          "date": "2014-04-26",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#2231",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL007159",
+          "date": "2015-05-04",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Engine room fire in the no.1 set, hit it with foam and shut off the fuel. Out in minutes.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#11551",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "no.1 set"
+        },
+        {
+          "entry_id": "CL007177",
+          "date": "2015-05-20",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Bottom-end knock on NO.2, dropped the sump and found 1 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#12224",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL007178",
+          "date": "2015-05-20",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Injectors off no.3 and pop-tested, two were dribbling. Reconditioned and refitted.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#12225",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Injector"
+        },
+        {
+          "entry_id": "CL007228",
+          "date": "2015-07-14",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Injectors off no.3 and pop-tested, two were dribbling. Reconditioned and refitted.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#14238",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Injector"
+        },
+        {
+          "entry_id": "CL007283",
+          "date": "2015-09-09",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Bottom-end knock on No.1, dropped the sump and found 2 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#16271",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL007343",
+          "date": "2015-11-17",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Injectors off no 1 and pop-tested, two were dribbling. Reconditioned and refitted.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#18822",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Injector"
+        },
+        {
+          "entry_id": "CL007356",
+          "date": "2015-12-03",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Engine room fire in the no 2 set, hit it with foam and shut off the fuel. Out in minutes.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#19385",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "no 2 set"
+        },
+        {
+          "entry_id": "CL007667",
+          "date": "2016-12-15",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Overhauled the foam installation and proved the induction rate on test.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#33000",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL007695",
+          "date": "2017-01-18",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Engine room fire in the no.2 set, hit it with foam and shut off the fuel. Out in minutes.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34226",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "no.2 set"
+        },
+        {
+          "entry_id": "CL008752",
+          "date": "2020-06-28",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Engine room fire in the no.2 set, hit it with foam and shut off the fuel. Out in minutes.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#33002",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "no.2 set"
+        },
+        {
+          "entry_id": "CL009015",
+          "date": "2021-05-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on no.1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#44112",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL009294",
+          "date": "2022-04-01",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#3399",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL009300",
+          "date": "2022-04-16",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Ran No.1 set 2 hrs. Oil and water checked.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#3995",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "No.1 set"
+        },
+        {
+          "entry_id": "CL009472",
+          "date": "2022-11-23",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on no 2, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#11953",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL009560",
+          "date": "2023-03-27",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#16605",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL009609",
+          "date": "2023-05-22",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on no 1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#18630",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL009618",
+          "date": "2023-06-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Engine room fire in the no.2 set, hit it with foam and shut off the fuel. Out in minutes.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19088",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "no.2 set"
+        },
+        {
+          "entry_id": "CL009642",
+          "date": "2023-06-24",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on no.1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19840",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL009819",
+          "date": "2024-02-08",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28106",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL009859",
+          "date": "2024-03-11",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on no.2 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#29259",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL009904",
+          "date": "2024-05-04",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on no 1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31113",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL009912",
+          "date": "2024-05-14",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on no.3 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31490",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL010312",
+          "date": "2025-11-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on No.2, dropped the sump and found 2 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#50667",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL010340",
+          "date": "2025-12-08",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51889",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL010408",
+          "date": "2026-03-26",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Injectors off No.2 and pop-tested, two were dribbling. Reconditioned and refitted.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#56059",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Injector"
+        },
+        {
+          "entry_id": "CL010442",
+          "date": "2026-05-07",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on No.2 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#57550",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL010536",
+          "date": "2026-09-14",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on NO.2, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#62348",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL010557",
+          "date": "2026-10-07",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63205",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Overhaul"
+        },
+        {
+          "entry_id": "CL010575",
+          "date": "2026-10-23",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Set the timing on no.2 after the pump was refitted, ran it up and checked exhaust temps.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#63859",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Set the timing"
+        },
+        {
+          "entry_id": "CL010589",
+          "date": "2026-11-19",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on no.1, dropped the sump and found 2 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#64873",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        },
+        {
+          "entry_id": "CL010614",
+          "date": "2026-12-15",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Bottom-end knock on no 1, dropped the sump and found 3 big-end shells scored.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#65781",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Bottom-end"
+        }
+      ],
+      "kinds": [
+        {
+          "label": "Set the timing on no.1 after the pump was refitted, ran it up and checked exhaust temps.",
+          "entryIds": [
+            "CL003194",
+            "CL005178",
+            "CL009015",
+            "CL009609",
+            "CL009642",
+            "CL009859",
+            "CL009904",
+            "CL009912",
+            "CL010442",
+            "CL010575"
+          ]
+        },
+        {
+          "label": "Overhauled the raw water side, impeller, seals and the heat exchanger stack cleaned.",
+          "entryIds": [
+            "CL003299",
+            "CL006777",
+            "CL009294",
+            "CL009560",
+            "CL009819",
+            "CL010340",
+            "CL010557"
+          ]
+        },
+        {
+          "label": "Overhauled the foam installation and proved the induction rate on test.",
+          "entryIds": [
+            "CL005488",
+            "CL005554",
+            "CL005995",
+            "CL006237",
+            "CL006301",
+            "CL006680",
+            "CL007667"
+          ]
+        },
+        {
+          "label": "Engine room fire in the no 2 set, hit it with foam and shut off the fuel. Out in minutes.",
+          "entryIds": [
+            "CL005940",
+            "CL007159",
+            "CL007356",
+            "CL007695",
+            "CL008752",
+            "CL009618"
+          ]
+        },
+        {
+          "label": "Injectors off no.2 and pop-tested, two were dribbling. Reconditioned and refitted.",
+          "entryIds": [
+            "CL006702",
+            "CL006755",
+            "CL007178",
+            "CL007228",
+            "CL007343",
+            "CL010408"
+          ]
+        },
+        {
+          "label": "Bottom-end knock on no 2, dropped the sump and found 3 big-end shells scored.",
+          "entryIds": [
+            "CL005530",
+            "CL009472",
+            "CL010536",
+            "CL010614"
+          ]
+        },
+        {
+          "label": "Bottom-end knock on No.1, dropped the sump and found 2 big-end shells scored.",
+          "entryIds": [
+            "CL007283",
+            "CL010312",
+            "CL010589"
+          ]
+        },
+        {
+          "label": "Bottom-end knock on no 2, dropped the sump and found 1 big-end shells scored.",
+          "entryIds": [
+            "CL005496",
+            "CL007177"
+          ]
+        },
+        {
+          "label": "Started no 1 set and ran on load 4 hrs.",
+          "entryIds": [
+            "CL006181"
+          ]
+        },
+        {
+          "label": "Ran No.1 set 2 hrs. Oil and water checked.",
+          "entryIds": [
+            "CL009300"
+          ]
+        }
+      ],
+      "summary": {
+        "kinds": 10,
+        "occasions": 47,
+        "firstYear": 2004,
+        "lastYear": 2026,
+        "stations": 5
+      },
+      "training": [
+        {
+          "scheme": "MPMC",
+          "module": "MPMC-B",
+          "module_name": "Fluid transfer and pumped systems",
+          "year": 2016,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "MPMC",
+          "module": "MPMC-C",
+          "module_name": "Hydraulic power and control",
+          "year": 2018,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "MPMC",
+          "module": "MPMC-D",
+          "module_name": "Planned maintenance practice",
+          "year": 2022,
+          "outcome": "completed"
+        }
+      ],
+      "certifications": [
+        {
+          "scheme": "MPMC",
+          "modules_held": [
+            "MPMC-B",
+            "MPMC-C",
+            "MPMC-D"
+          ],
+          "modules_missing": [
+            "MPMC-A"
+          ],
+          "complete": false,
+          "awarded_year": 2022,
+          "expires_year": 2027,
+          "valid_2026": false
+        }
+      ],
+      "verified": [
+        {
+          "scheme": "MPMC",
+          "schemeName": "Marine Plant Maintenance Certificate",
+          "module": "MPMC-B",
+          "module_name": "Fluid transfer and pumped systems",
+          "year": 2016,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2016. This scheme renews every 5 years, so by its module date this would have lapsed in 2021."
+        },
+        {
+          "scheme": "MPMC",
+          "schemeName": "Marine Plant Maintenance Certificate",
+          "module": "MPMC-C",
+          "module_name": "Hydraulic power and control",
+          "year": 2018,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2018. This scheme renews every 5 years, so by its module date this would have lapsed in 2023."
+        },
+        {
+          "scheme": "MPMC",
+          "schemeName": "Marine Plant Maintenance Certificate",
+          "module": "MPMC-D",
+          "module_name": "Planned maintenance practice",
+          "year": 2022,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": false
+        }
+      ],
+      "missingModules": [
+        {
+          "scheme": "MPMC",
+          "module": "MPMC-A",
+          "module_name": "Compression ignition prime movers"
+        },
+        {
+          "scheme": "MECS",
+          "module": "MECS-2",
+          "module_name": "Rotating plant and generator control"
+        }
+      ],
+      "searchedFor": "Eleven patterns for generating plant: injectors, AVRs, load sharing, timing, exhaust temperatures, pop testing, overhauls, governors, bottom-end strip-downs.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "No MECS record of any kind — no certification entry and no training record. Marine Electrical Competence Standard is the scheme that would formally evidence this, and this keeper has never been entered into it.",
+        "MPMC-A (Compression ignition prime movers) is not held.",
+        "MECS-2 (Rotating plant and generator control) is not held."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-ENR-0536",
+        "statement": "Configure and verify the automatic starting, synchronising and load-sharing arrangements of prime mover installations."
+      }
+    },
+    {
+      "id": "electrical-fault-diagnosis",
+      "label": "Diagnosing electrical faults",
+      "requirement": {
+        "text": "Diagnose faults on 690V and 33kV systems up to the point of isolation. [Delighted by] fault-finding on electrical systems without a laptop telling you the answer.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What the job actually is\" and \"We would be delighted by\"",
+        "class": "experience",
+        "essential": false,
+        "gate": false
+      },
+      "assessment": "thin",
+      "reason": "5 direct records across 6 years and 2 stations. Suggestive, but below the stated threshold of 10 records across 5 years at 2 stations, so no claim is made.",
+      "spread": {
+        "records": 7,
+        "direct": 5,
+        "custodial": 0,
+        "adjacent": 2,
+        "firstDate": "2014-07-22",
+        "lastDate": "2026-01-08",
+        "distinctYears": 6,
+        "yearsSpanned": 13,
+        "stations": [
+          "Nevisbeg Skerry",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL006875",
+          "date": "2014-07-22",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Reset tripped breaker on lighting sub-board.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#003498",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "Reset tripped breaker"
+        },
+        {
+          "entry_id": "CL008462",
+          "date": "2019-06-23",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Alarm bell sounding, traced to a loose wire.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#19656",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "traced to "
+        },
+        {
+          "entry_id": "CL008559",
+          "date": "2019-11-02",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Intermittent fault on the gallery lights, watching it.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#24434",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Intermittent"
+        },
+        {
+          "entry_id": "CL008655",
+          "date": "2020-02-24",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Alarm bell sounding, traced to a loose wire.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#28609",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "traced to "
+        },
+        {
+          "entry_id": "CL010068",
+          "date": "2024-12-05",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Lamp not lit, found the fuse gone. Renewed.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#38570",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "found the fuse"
+        },
+        {
+          "entry_id": "CL010095",
+          "date": "2025-01-03",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Intermittent fault on the gallery lights, watching it.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#39553",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Intermittent"
+        },
+        {
+          "entry_id": "CL010357",
+          "date": "2026-01-08",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Reset tripped breaker on lighting sub-board.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52988",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Reset tripped breaker"
+        }
+      ],
+      "kinds": [
+        {
+          "label": "Alarm bell sounding, traced to a loose wire.",
+          "entryIds": [
+            "CL008462",
+            "CL008655"
+          ]
+        },
+        {
+          "label": "Intermittent fault on the gallery lights, watching it.",
+          "entryIds": [
+            "CL008559",
+            "CL010095"
+          ]
+        },
+        {
+          "label": "Lamp not lit, found the fuse gone. Renewed.",
+          "entryIds": [
+            "CL010068"
+          ]
+        }
+      ],
+      "summary": {
+        "kinds": 3,
+        "occasions": 5,
+        "firstYear": 2019,
+        "lastYear": 2025,
+        "stations": 1
+      },
+      "training": [],
+      "certifications": [],
+      "verified": [],
+      "missingModules": [
+        {
+          "scheme": "MECS",
+          "module": "MECS-1",
+          "module_name": "Low voltage distribution and protection"
+        },
+        {
+          "scheme": "MECS",
+          "module": "MECS-3",
+          "module_name": "Diagnostic practice and instrumentation"
+        },
+        {
+          "scheme": "MECS",
+          "module": "MECS-5",
+          "module_name": "Electrical safe working"
+        }
+      ],
+      "searchedFor": "Nine diagnostic patterns plus one deliberately-adjacent pattern (resetting a breaker), so that routine resets do not inflate the count.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "No MECS record of any kind — no certification entry and no training record. Marine Electrical Competence Standard is the scheme that would formally evidence this, and this keeper has never been entered into it.",
+        "MECS-1 (Low voltage distribution and protection) is not held.",
+        "MECS-3 (Diagnostic practice and instrumentation) is not held.",
+        "MECS-5 (Electrical safe working) is not held."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-ENR-0538",
+        "statement": "Determine the location and nature of departures from normal function in electrical installations by systematic diagnostic method."
+      }
+    },
+    {
+      "id": "hv-render-safe",
+      "label": "Making high-voltage apparatus safe",
+      "requirement": {
+        "text": "Diagnose faults on 690V and 33kV systems up to the point of isolation.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What the job actually is\"",
+        "class": "experience",
+        "essential": false,
+        "gate": false
+      },
+      "assessment": "adjacent",
+      "reason": "Of 4 matching records, 1 describes the work itself, 3 describe custody or administration of it. Most of these are not the thing the employer asked for, so they cannot be read as evidence of doing it.",
+      "spread": {
+        "records": 4,
+        "direct": 1,
+        "custodial": 3,
+        "adjacent": 0,
+        "firstDate": "2021-11-14",
+        "lastDate": "2025-12-03",
+        "distinctYears": 4,
+        "yearsSpanned": 5,
+        "stations": [
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL009174",
+          "date": "2021-11-14",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "HV room locked and keys signed back in.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#50972",
+          "source_era": 3,
+          "signal": "custodial",
+          "matched": "keys signed back"
+        },
+        {
+          "entry_id": "CL009367",
+          "date": "2022-07-15",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Held the keys for the HV work, PTW 46 refers.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#7189",
+          "source_era": 3,
+          "signal": "custodial",
+          "matched": "Held the keys"
+        },
+        {
+          "entry_id": "CL010026",
+          "date": "2024-10-09",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Restored the HV after the contractor cleared, removed earths and de-isolated in sequence.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#36589",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "removed earths"
+        },
+        {
+          "entry_id": "CL010332",
+          "date": "2025-12-03",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "HV room locked and keys signed back in.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51677",
+          "source_era": 3,
+          "signal": "custodial",
+          "matched": "keys signed back"
+        }
+      ],
+      "kinds": [
+        {
+          "label": "Restored the HV after the contractor cleared, removed earths and de-isolated in sequence.",
+          "entryIds": [
+            "CL010026"
+          ]
+        }
+      ],
+      "summary": {
+        "kinds": 1,
+        "occasions": 1,
+        "firstYear": 2024,
+        "lastYear": 2024,
+        "stations": 1
+      },
+      "training": [
+        {
+          "scheme": "HVAP",
+          "module": "HVAP-04",
+          "module_name": "Authorised Person practical assessment",
+          "year": 2010,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "HVAP",
+          "module": "HVAP-03",
+          "module_name": "Safety documentation and permit issue",
+          "year": 2019,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "HVAP",
+          "module": "HVAP-01",
+          "module_name": "Switching principles and system knowledge",
+          "year": 2026,
+          "outcome": "completed"
+        }
+      ],
+      "certifications": [
+        {
+          "scheme": "HVAP",
+          "modules_held": [
+            "HVAP-01",
+            "HVAP-03",
+            "HVAP-04"
+          ],
+          "modules_missing": [
+            "HVAP-02"
+          ],
+          "complete": false,
+          "awarded_year": 2026,
+          "expires_year": 2029,
+          "valid_2026": false
+        }
+      ],
+      "verified": [
+        {
+          "scheme": "HVAP",
+          "schemeName": "High Voltage Authorised Person (Offshore Renewables)",
+          "module": "HVAP-01",
+          "module_name": "Switching principles and system knowledge",
+          "year": 2026,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": false
+        }
+      ],
+      "missingModules": [
+        {
+          "scheme": "HVAP",
+          "module": "HVAP-02",
+          "module_name": "Isolation, earthing and proving dead"
+        }
+      ],
+      "searchedFor": "Three patterns for the switching operation itself, and two for key custody — tagged separately so that custody cannot be read as operation. The framework statement itself ends \"within the limits of a written authorisation\", which is the distinction this role turns on.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "HVAP-02 (Isolation, earthing and proving dead) is not held."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-ENR-0532",
+        "statement": "Undertake operations to render high voltage apparatus safe from the system, including the application of protective conductive connections, within the limits of a written authorisation."
+      }
+    },
+    {
+      "id": "hv-safety-documentation",
+      "label": "Working to a permit system",
+      "requirement": {
+        "text": "Experience of working to a permit system.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"We would be delighted by\"",
+        "class": "experience",
+        "essential": false,
+        "gate": false
+      },
+      "assessment": "thin",
+      "reason": "5 direct records across 5 years and 2 stations. Suggestive, but below the stated threshold of 10 records across 5 years at 2 stations, so no claim is made.",
+      "spread": {
+        "records": 5,
+        "direct": 5,
+        "custodial": 0,
+        "adjacent": 0,
+        "firstDate": "2011-03-12",
+        "lastDate": "2025-12-03",
+        "distinctYears": 5,
+        "yearsSpanned": 15,
+        "stations": [
+          "Tullaghmore Lighthouse",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL005626",
+          "date": "2011-03-12",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Permit returned and cancelled at 0330.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#002534",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Permit returned"
+        },
+        {
+          "entry_id": "CL009174",
+          "date": "2021-11-14",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "HV room locked and keys signed back in.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#50972",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "keys signed back"
+        },
+        {
+          "entry_id": "CL009367",
+          "date": "2022-07-15",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Held the keys for the HV work, PTW 46 refers.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#7189",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "PTW"
+        },
+        {
+          "entry_id": "CL010026",
+          "date": "2024-10-09",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Restored the HV after the contractor cleared, removed earths and de-isolated in sequence.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#36589",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "contractor cleared"
+        },
+        {
+          "entry_id": "CL010332",
+          "date": "2025-12-03",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "HV room locked and keys signed back in.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#51677",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "keys signed back"
+        }
+      ],
+      "kinds": [
+        {
+          "label": "HV room locked and keys signed back in.",
+          "entryIds": [
+            "CL009174",
+            "CL010332"
+          ]
+        },
+        {
+          "label": "Permit returned and cancelled at 0330.",
+          "entryIds": [
+            "CL005626"
+          ]
+        },
+        {
+          "label": "Held the keys for the HV work, PTW 46 refers.",
+          "entryIds": [
+            "CL009367"
+          ]
+        },
+        {
+          "label": "Restored the HV after the contractor cleared, removed earths and de-isolated in sequence.",
+          "entryIds": [
+            "CL010026"
+          ]
+        }
+      ],
+      "summary": {
+        "kinds": 4,
+        "occasions": 5,
+        "firstYear": 2011,
+        "lastYear": 2025,
+        "stations": 2
+      },
+      "training": [
+        {
+          "scheme": "HVAP",
+          "module": "HVAP-04",
+          "module_name": "Authorised Person practical assessment",
+          "year": 2010,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "HVAP",
+          "module": "HVAP-03",
+          "module_name": "Safety documentation and permit issue",
+          "year": 2019,
+          "outcome": "completed"
+        },
+        {
+          "scheme": "HVAP",
+          "module": "HVAP-01",
+          "module_name": "Switching principles and system knowledge",
+          "year": 2026,
+          "outcome": "completed"
+        }
+      ],
+      "certifications": [
+        {
+          "scheme": "HVAP",
+          "modules_held": [
+            "HVAP-01",
+            "HVAP-03",
+            "HVAP-04"
+          ],
+          "modules_missing": [
+            "HVAP-02"
+          ],
+          "complete": false,
+          "awarded_year": 2026,
+          "expires_year": 2029,
+          "valid_2026": false
+        }
+      ],
+      "verified": [
+        {
+          "scheme": "HVAP",
+          "schemeName": "High Voltage Authorised Person (Offshore Renewables)",
+          "module": "HVAP-03",
+          "module_name": "Safety documentation and permit issue",
+          "year": 2019,
+          "outcome": "completed",
+          "schemeIsCertificate": false,
+          "stale": true,
+          "staleNote": "Completed 2019. This scheme renews every 3 years, so by its module date this would have lapsed in 2022."
+        }
+      ],
+      "missingModules": [],
+      "searchedFor": "Four patterns for permit administration. Note that two of these patterns also appear under \"making high-voltage apparatus safe\", tagged custodial there and direct here. The same records support one claim and not the other.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "Nothing material was searched for and not found."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-ENR-0533",
+        "statement": "Prepare, issue and cancel safety documentation governing access to high voltage apparatus."
+      }
+    },
+    {
+      "id": "vessel-transfer",
+      "label": "Transferring from a moving vessel",
+      "requirement": {
+        "text": "Transfer from a moving vessel to a fixed ladder in up to 1.5m significant wave height.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"What the job actually is\"",
+        "class": "experience",
+        "essential": false,
+        "gate": false
+      },
+      "assessment": "adjacent",
+      "reason": "Of 43 matching records, 43 describe neighbouring work. Most of these are not the thing the employer asked for, so they cannot be read as evidence of doing it.",
+      "spread": {
+        "records": 43,
+        "direct": 0,
+        "custodial": 0,
+        "adjacent": 43,
+        "firstDate": "2004-06-11",
+        "lastDate": "2026-08-24",
+        "distinctYears": 16,
+        "yearsSpanned": 23,
+        "stations": [
+          "Hurlaven Ness",
+          "Tullaghmore Lighthouse",
+          "Ardvarra Island",
+          "Nevisbeg Skerry",
+          "Nuallanish Head",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL003331",
+          "date": "2004-06-11",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Surveyed the whole landing ironwork and reported 4 items at end of life.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#005819",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL003382",
+          "date": "2004-08-03",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#007699",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL003815",
+          "date": "2005-12-08",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2005.DAT#012283",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL003819",
+          "date": "2005-12-09",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Indent made out for the next relief.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2005.DAT#012327",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "relief"
+        },
+        {
+          "entry_id": "CL004084",
+          "date": "2006-10-16",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Surveyed the whole landing ironwork and reported 2 items at end of life.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2006.DAT#010396",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL005295",
+          "date": "2010-04-10",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Surveyed the whole landing ironwork and reported 2 items at end of life.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#003538",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL005396",
+          "date": "2010-07-22",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#007175",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL005451",
+          "date": "2010-09-22",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Surveyed the whole landing ironwork and reported 4 items at end of life.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#009218",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL005508",
+          "date": "2010-11-18",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Stores list made up for next relief.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#011165",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "relief"
+        },
+        {
+          "entry_id": "CL005822",
+          "date": "2011-09-01",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Winch brake adjusted a little.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2011.DAT#008661",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "Winch"
+        },
+        {
+          "entry_id": "CL006487",
+          "date": "2013-06-28",
+          "station": "Ardvarra Island",
+          "station_code": "ARD",
+          "station_class": "island",
+          "text": "Anodes checked on the landing ironwork.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#006239",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL006524",
+          "date": "2013-08-02",
+          "station": "Ardvarra Island",
+          "station_code": "ARD",
+          "station_class": "island",
+          "text": "Anodes checked on the landing ironwork.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#007397",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL006630",
+          "date": "2013-12-03",
+          "station": "Ardvarra Island",
+          "station_code": "ARD",
+          "station_class": "island",
+          "text": "Indent made out for the next relief.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2013.DAT#011699",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "relief"
+        },
+        {
+          "entry_id": "CL006882",
+          "date": "2014-07-27",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#4002",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL007036",
+          "date": "2014-11-26",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Surveyed the whole landing ironwork and reported 2 items at end of life.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2014.DAT#005670",
+          "source_era": 2,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL007143",
+          "date": "2015-04-08",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Surveyed the whole landing ironwork and reported 4 items at end of life.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#10547",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL007172",
+          "date": "2015-05-16",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#12063",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL007176",
+          "date": "2015-05-20",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Surveyed the whole landing ironwork and reported 3 items at end of life.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#12226",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL007220",
+          "date": "2015-06-26",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#13600",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL007260",
+          "date": "2015-08-11",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Surveyed the whole landing ironwork and reported 2 items at end of life.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#15260",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL007310",
+          "date": "2015-10-12",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#17458",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL007379",
+          "date": "2015-12-21",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#20087",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL007713",
+          "date": "2017-02-09",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#34947",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL007812",
+          "date": "2017-05-26",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#38980",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL007839",
+          "date": "2017-06-28",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Surveyed the whole landing ironwork and reported 2 items at end of life.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#40143",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL007939",
+          "date": "2017-10-22",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#44340",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL008562",
+          "date": "2019-11-03",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#24469",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL009056",
+          "date": "2021-06-27",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Worked MV SEALADH on ch.16 re the relief.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#45999",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "relief"
+        },
+        {
+          "entry_id": "CL009080",
+          "date": "2021-08-01",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#47143",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL009192",
+          "date": "2021-12-04",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Winch brake adjusted a little.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2018-2021.csv#51688",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "Winch"
+        },
+        {
+          "entry_id": "CL009386",
+          "date": "2022-08-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Indent made out for the next relief.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#7924",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "relief"
+        },
+        {
+          "entry_id": "CL009531",
+          "date": "2023-02-20",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Anodes checked on the landing ironwork.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#15203",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL009684",
+          "date": "2023-08-23",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#22003",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL009843",
+          "date": "2024-03-01",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28880",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL009894",
+          "date": "2024-04-17",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Surveyed the whole landing ironwork and reported 4 items at end of life.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#30560",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL010134",
+          "date": "2025-02-22",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Indent made out for the next relief.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#41398",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "relief"
+        },
+        {
+          "entry_id": "CL010202",
+          "date": "2025-05-25",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#44836",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL010241",
+          "date": "2025-07-17",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#46734",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL010304",
+          "date": "2025-10-28",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#50451",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL010342",
+          "date": "2025-12-14",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Worked the relief boat on ch.16 re the relief.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#52124",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "relief"
+        },
+        {
+          "entry_id": "CL010384",
+          "date": "2026-02-17",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Renewed the sacrificial anodes on the slipway and recorded the wastage rates.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#54531",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "slipway"
+        },
+        {
+          "entry_id": "CL010433",
+          "date": "2026-04-21",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Surveyed the whole landing ironwork and reported 4 items at end of life.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#56960",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        },
+        {
+          "entry_id": "CL010525",
+          "date": "2026-08-24",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Surveyed the whole landing ironwork and reported 2 items at end of life.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#61644",
+          "source_era": 3,
+          "signal": "adjacent",
+          "matched": "landing"
+        }
+      ],
+      "kinds": [],
+      "summary": {
+        "kinds": 0,
+        "occasions": 0,
+        "firstYear": null,
+        "lastYear": null,
+        "stations": 0
+      },
+      "training": [],
+      "certifications": [],
+      "verified": [],
+      "missingModules": [
+        {
+          "scheme": "SMOC",
+          "module": "SMOC-BH",
+          "module_name": "Boat handling"
+        },
+        {
+          "scheme": "SMOC",
+          "module": "SMOC-MO",
+          "module_name": "Mooring and anchor work"
+        }
+      ],
+      "searchedFor": "Two patterns for transfer from a vessel under way, and four for the adjacent work — landings, reliefs, slipways, stores. The distinction matters because a lighthouse landing and a turbine boat-transfer are different operations that use the same vocabulary.",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "No SMOC record of any kind — no certification entry and no training record. Small Craft and Marine Operations Certificate is the scheme that would formally evidence this, and this keeper has never been entered into it.",
+        "SMOC-BH (Boat handling) is not held.",
+        "SMOC-MO (Mooring and anchor work) is not held.",
+        "Searched all 368 of this keeper’s logbook entries against 2 patterns for the work itself. No match. Absence of a written record is not evidence that the work was never done — roughly 70% of the raw logs were routine watchkeeping and were removed before this pack was produced."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-MAR-0009",
+        "statement": "Effect the transfer of personnel and materials to and from an isolated installation in adverse sea conditions."
+      }
+    },
+    {
+      "id": "instructing-others",
+      "label": "Training and looking after colleagues",
+      "requirement": {
+        "text": "People who have trained and looked after younger colleagues.",
+        "source": "Carrowmore Array · Wind Turbine Technician (O&M) posting, \"We would be delighted by\"",
+        "class": "experience",
+        "essential": false,
+        "gate": false
+      },
+      "assessment": "practised",
+      "reason": "17 work records describe this directly, across 11 separate years and 5 stations (2004–2025). That clears the stated threshold of 10 records, 5 years and 2 stations.",
+      "spread": {
+        "records": 17,
+        "direct": 17,
+        "custodial": 0,
+        "adjacent": 0,
+        "firstDate": "2004-06-18",
+        "lastDate": "2025-04-13",
+        "distinctYears": 11,
+        "yearsSpanned": 22,
+        "stations": [
+          "Hurlaven Ness",
+          "Tullaghmore Lighthouse",
+          "Nevisbeg Skerry",
+          "Nuallanish Head",
+          "Ballaghmona Carrig"
+        ]
+      },
+      "entries": [
+        {
+          "entry_id": "CL003340",
+          "date": "2004-06-18",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#006100",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL003468",
+          "date": "2004-11-02",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2004.DAT#010962",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL004382",
+          "date": "2007-10-06",
+          "station": "Hurlaven Ness",
+          "station_code": "HUR",
+          "station_class": "shore",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2007.DAT#009641",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL004747",
+          "date": "2008-10-27",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2008.DAT#010564",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL005305",
+          "date": "2010-04-22",
+          "station": "Tullaghmore Lighthouse",
+          "station_code": "TUL",
+          "station_class": "shore",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era2-keeperlog/KLOG2010.DAT#004020",
+          "source_era": 2,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL006890",
+          "date": "2014-08-07",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#4156",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL007132",
+          "date": "2015-03-25",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#10120",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL007376",
+          "date": "2015-12-19",
+          "station": "Nevisbeg Skerry",
+          "station_code": "NEV",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#20015",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL007537",
+          "date": "2016-07-02",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#26957",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL007885",
+          "date": "2017-08-23",
+          "station": "Nuallanish Head",
+          "station_code": "NUA",
+          "station_class": "shore",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2014-2017.csv#42148",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL009639",
+          "date": "2023-06-20",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#19685",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL009846",
+          "date": "2024-03-02",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#28915",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL009869",
+          "date": "2024-03-20",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#29624",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL009908",
+          "date": "2024-05-06",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#31187",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL010005",
+          "date": "2024-09-12",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#35630",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL010121",
+          "date": "2025-02-05",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#40746",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        },
+        {
+          "entry_id": "CL010167",
+          "date": "2025-04-13",
+          "station": "Ballaghmona Carrig",
+          "station_code": "BAL",
+          "station_class": "rock",
+          "text": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "source_record": "raw/logbooks/era3-spreadsheets/station-logs-2022-2026.csv#43288",
+          "source_era": 3,
+          "signal": "direct",
+          "matched": "Wrote the method"
+        }
+      ],
+      "kinds": [
+        {
+          "label": "Wrote the method for the tower repaint and briefed the party before we started.",
+          "entryIds": [
+            "CL003340",
+            "CL003468",
+            "CL004382",
+            "CL004747",
+            "CL005305",
+            "CL006890",
+            "CL007132",
+            "CL007376",
+            "CL007537",
+            "CL007885",
+            "CL009639",
+            "CL009846",
+            "CL009869",
+            "CL009908",
+            "CL010005",
+            "CL010121",
+            "CL010167"
+          ]
+        }
+      ],
+      "summary": {
+        "kinds": 1,
+        "occasions": 17,
+        "firstYear": 2004,
+        "lastYear": 2025,
+        "stations": 5
+      },
+      "training": [],
+      "certifications": [],
+      "verified": [],
+      "missingModules": [],
+      "searchedFor": "Five patterns for instructing others. This is the clearest policy-to-prose match in the whole mapping: NOSF-SAF-1506 says \"prepare a method statement for work at height and communicate its provisions to those undertaking the work\", and the logbook says \"wrote the method for the tower repaint and briefed the party before we started\".",
+      "limitations": [
+        "Work records describe what somebody wrote down at the time, not everything that was done."
+      ],
+      "absence": [
+        "Nothing material was searched for and not found."
+      ],
+      "discrepancies": [],
+      "nosf": {
+        "id": "NOSF-SAF-1506",
+        "statement": "Prepare a method statement for work at height and communicate its provisions to those undertaking the work."
+      }
+    }
+  ],
+  "route": [
+    {
+      "order": 1,
+      "action": "Obtain offshore medical fitness",
+      "kind": "assessment",
+      "scheme": "—",
+      "because": "The employer lists this as essential and the Authority holds no record of it either way. It is also a stated prerequisite for OSSC — OSSC lists \"Current offshore medical fitness declaration.\" — so it has to come before the course, not after it.",
+      "unlocks": [
+        "Prerequisite for OSSC (Offshore Safety and Survival Certificate)"
+      ],
+      "derivedFrom": "gate claim with requirementClass=declaration; ordering derived from scheme prerequisites naming a medical declaration"
+    },
+    {
+      "order": 2,
+      "action": "Complete OSSC-FA",
+      "kind": "course",
+      "scheme": "OSSC",
+      "module": "OSSC-FA",
+      "module_name": "First aid and casualty handling",
+      "because": "A valid offshore safety and survival certificate covering sea survival, fire, first aid and working at height. This is the only module of OSSC not held, so it is the whole distance between the record as it stands and a valid certificate.",
+      "unlocks": [
+        "Completes OSSC — Offshore Safety and Survival Certificate",
+        "Opens WAHS (Working at Height and Rope Access Scheme), whose prerequisites name OSSC",
+        "Opens SMOC (Small Craft and Marine Operations Certificate), whose prerequisites name OSSC"
+      ],
+      "derivedFrom": "gate claim offshore-safety-survival, missing module from certification register"
+    },
+    {
+      "order": 3,
+      "action": "Enter the WAHS scheme",
+      "kind": "assessment",
+      "scheme": "WAHS",
+      "because": "50 work records describe this across 16 years, and no register anywhere records it. This is the largest gap between what the record shows and what can be proved. Prerequisite: OSSC-SS within validity.",
+      "unlocks": [
+        "Converts 50 records of practice into something an insurer will accept"
+      ],
+      "derivedFrom": "highest direct-record count among practised claims with no register entry"
+    }
+  ],
+  "cohort": {
+    "keepersExamined": 40,
+    "gateScheme": "OSSC",
+    "gateSchemeName": "Offshore Safety and Survival Certificate",
+    "mobilisableToday": 3,
+    "oneModuleShort": 8,
+    "twoOrMoreShort": 8,
+    "noRecordAtAll": 21,
+    "cheapestIntervention": {
+      "module": "OSSC-FA",
+      "module_name": "First aid and casualty handling",
+      "unlocks": 4,
+      "keeperCodes": [
+        "K0184",
+        "K0525",
+        "K1363",
+        "K1374"
+      ]
+    },
+    "caveat": "These 40 keepers are the clean subset. The pack states they are not a random sample and are not claimed to be representative, so these counts are not scaled to the full 340."
+  }
+}

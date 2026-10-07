@@ -1,0 +1,38 @@
+import viewCaret from '@/assets/application-view-caret.svg';
+import { Button } from '@/components/ui/button';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { posting } from '@/data/role';
+import { routes } from '@/lib/routes';
+
+/** The shared picker popover, with the tracker design's navigation choices. */
+export function ApplicationViewPopover() {
+  return (
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button type="button" variant="outline" className="h-[38px] min-w-0 flex-1 gap-1">
+          View
+          <img src={viewCaret} width={16} height={16} alt="" className="max-w-none shrink-0 rotate-90" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent
+        aria-label={'View options for ' + posting.title}
+        className="w-[331px] max-w-[calc(100vw-32px)] p-3 motion-reduce:animate-none"
+      >
+        <div className="flex flex-col">
+          <a
+            href={routes.openingRole}
+            className="flex h-11 items-center rounded-lg p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
+          >
+            Job details
+          </a>
+          <a
+            href={routes.applicationProfile}
+            className="flex h-11 items-center rounded-lg p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
+          >
+            Your application
+          </a>
+        </div>
+      </PopoverContent>
+    </Popover>
+  );
+}

@@ -1,0 +1,293 @@
+{
+ "compiled_by": "Carrowmore Lighthouse Authority, redeployment working group",
+ "compiled": "2026-02",
+ "caveat": "Compiled from the issuing bodies' published material. The Authority's own internal authorisations are not certification schemes and do not appear here, although some schemes will recognise them.",
+ "schemes": [
+  {
+   "code": "HVAP",
+   "name": "High Voltage Authorised Person (Offshore Renewables)",
+   "issuing_body": "Northern Marine Competence Board",
+   "renewal_years": 3,
+   "modules": [
+    {
+     "code": "HVAP-01",
+     "name": "Switching principles and system knowledge"
+    },
+    {
+     "code": "HVAP-02",
+     "name": "Isolation, earthing and proving dead"
+    },
+    {
+     "code": "HVAP-03",
+     "name": "Safety documentation and permit issue"
+    },
+    {
+     "code": "HVAP-04",
+     "name": "Authorised Person practical assessment"
+    }
+   ],
+   "prerequisites": [
+    "MECS at Stage 3 or above",
+    "Two years' documented switching experience on an 11kV or higher system",
+    "A lapsed Carrowmore Lighthouse Authority internal HV authorisation is accepted in lieu of the experience requirement where documentary evidence of the original authorisation can be produced."
+   ],
+   "notes": "Insurer-mandated for the Carrowmore Array. No grandfathering without evidence."
+  },
+  {
+   "code": "MECS",
+   "name": "Marine Electrical Competence Standard",
+   "issuing_body": "Northern Marine Competence Board",
+   "renewal_years": 5,
+   "modules": [
+    {
+     "code": "MECS-1",
+     "name": "Low voltage distribution and protection"
+    },
+    {
+     "code": "MECS-2",
+     "name": "Rotating plant and generator control"
+    },
+    {
+     "code": "MECS-3",
+     "name": "Diagnostic practice and instrumentation"
+    },
+    {
+     "code": "MECS-4",
+     "name": "Storage batteries and DC systems"
+    },
+    {
+     "code": "MECS-5",
+     "name": "Electrical safe working"
+    }
+   ],
+   "prerequisites": [
+    "None. Stages are cumulative."
+   ],
+   "notes": "Stage awarded is the highest consecutive module completed."
+  },
+  {
+   "code": "MPMC",
+   "name": "Marine Plant Maintenance Certificate",
+   "issuing_body": "Institute of Marine Plant Engineers (Northern Isles)",
+   "renewal_years": 5,
+   "modules": [
+    {
+     "code": "MPMC-A",
+     "name": "Compression ignition prime movers"
+    },
+    {
+     "code": "MPMC-B",
+     "name": "Fluid transfer and pumped systems"
+    },
+    {
+     "code": "MPMC-C",
+     "name": "Hydraulic power and control"
+    },
+    {
+     "code": "MPMC-D",
+     "name": "Planned maintenance practice"
+    }
+   ],
+   "prerequisites": [
+    "None."
+   ],
+   "notes": ""
+  },
+  {
+   "code": "OSSC",
+   "name": "Offshore Safety and Survival Certificate",
+   "issuing_body": "Carrowmore Offshore Training Consortium",
+   "renewal_years": 4,
+   "modules": [
+    {
+     "code": "OSSC-SS",
+     "name": "Sea survival and escape"
+    },
+    {
+     "code": "OSSC-FF",
+     "name": "Fire prevention and response"
+    },
+    {
+     "code": "OSSC-FA",
+     "name": "First aid and casualty handling"
+    },
+    {
+     "code": "OSSC-HL",
+     "name": "Helicopter landing area operations"
+    },
+    {
+     "code": "OSSC-CS",
+     "name": "Confined space entry and rescue"
+    }
+   ],
+   "prerequisites": [
+    "Current offshore medical fitness declaration."
+   ],
+   "notes": "Hard gate for any offshore mobilisation. Four-year validity, no extensions."
+  },
+  {
+   "code": "WAHS",
+   "name": "Working at Height and Rope Access Scheme",
+   "issuing_body": "Carrowmore Offshore Training Consortium",
+   "renewal_years": 3,
+   "modules": [
+    {
+     "code": "WAHS-1",
+     "name": "Height safety and fall arrest"
+    },
+    {
+     "code": "WAHS-2",
+     "name": "Ladder and tower climbing"
+    },
+    {
+     "code": "WAHS-3",
+     "name": "Rope access level 1"
+    },
+    {
+     "code": "WAHS-4",
+     "name": "Tower rescue and casualty recovery"
+    }
+   ],
+   "prerequisites": [
+    "OSSC-SS within validity."
+   ],
+   "notes": ""
+  },
+  {
+   "code": "RCOM",
+   "name": "Radio and Communications Operator Certificate",
+   "issuing_body": "Northern Isles Radio Licensing Office",
+   "renewal_years": null,
+   "modules": [
+    {
+     "code": "RCOM-GEN",
+     "name": "General operator procedures"
+    },
+    {
+     "code": "RCOM-DSC",
+     "name": "Digital selective calling"
+    },
+    {
+     "code": "RCOM-MET",
+     "name": "Meteorological observing and reporting"
+    },
+    {
+     "code": "RCOM-AT",
+     "name": "Aids to navigation telemetry"
+    }
+   ],
+   "prerequisites": [
+    "None."
+   ],
+   "notes": "Lifetime award. The 1985-1998 paper register was never digitised."
+  },
+  {
+   "code": "SMOC",
+   "name": "Small Craft and Marine Operations Certificate",
+   "issuing_body": "Cnoc Harbour Trust Training Centre",
+   "renewal_years": 5,
+   "modules": [
+    {
+     "code": "SMOC-BH",
+     "name": "Boat handling"
+    },
+    {
+     "code": "SMOC-NV",
+     "name": "Coastal navigation and pilotage"
+    },
+    {
+     "code": "SMOC-MO",
+     "name": "Mooring and anchor work"
+    },
+    {
+     "code": "SMOC-SR",
+     "name": "Search patterns and on-scene coordination"
+    }
+   ],
+   "prerequisites": [
+    "OSSC-SS within validity."
+   ],
+   "notes": ""
+  },
+  {
+   "code": "SFAB",
+   "name": "Structures and Fabric Maintenance Award",
+   "issuing_body": "Northern Isles Building Crafts Council",
+   "renewal_years": null,
+   "modules": [
+    {
+     "code": "SFAB-M",
+     "name": "Masonry, render and pointing"
+    },
+    {
+     "code": "SFAB-C",
+     "name": "Surface preparation and protective coatings"
+    },
+    {
+     "code": "SFAB-G",
+     "name": "Glazing and weatherproofing"
+    },
+    {
+     "code": "SFAB-I",
+     "name": "Condition inspection and reporting"
+    }
+   ],
+   "prerequisites": [
+    "None."
+   ],
+   "notes": "Lifetime award. Rarely asked for outside the Authority."
+  },
+  {
+   "code": "LOSC",
+   "name": "Lifting Operations Safety Certificate",
+   "issuing_body": "Cnoc Harbour Trust Training Centre",
+   "renewal_years": 3,
+   "modules": [
+    {
+     "code": "LOSC-S",
+     "name": "Slinging and signalling"
+    },
+    {
+     "code": "LOSC-A",
+     "name": "Appliance operation"
+    },
+    {
+     "code": "LOSC-P",
+     "name": "Lift planning and appointed person duties"
+    }
+   ],
+   "prerequisites": [
+    "None for the first two modules. LOSC-P requires LOSC-S and LOSC-A."
+   ],
+   "notes": ""
+  },
+  {
+   "code": "ANSM",
+   "name": "Aids to Navigation Systems Maintenance Certificate",
+   "issuing_body": "Northern Isles Standards Council",
+   "renewal_years": 5,
+   "modules": [
+    {
+     "code": "ANSM-O",
+     "name": "Optical apparatus and light sources"
+    },
+    {
+     "code": "ANSM-C",
+     "name": "Character, timing and flasher control"
+    },
+    {
+     "code": "ANSM-A",
+     "name": "Audible signals and compressed air plant"
+    },
+    {
+     "code": "ANSM-E",
+     "name": "Electronic aids and telemetry"
+    }
+   ],
+   "prerequisites": [
+    "None."
+   ],
+   "notes": "Withdrawn for new entrants in 2021 and being replaced by a modular digital award. Existing holders remain recognised."
+  }
+ ]
+}

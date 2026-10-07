@@ -1,0 +1,178 @@
+{
+  "keeper": {
+    "keeper_code": "K0184",
+    "name": "Bearach Ormlaithe",
+    "current_grade": "Keeper Grade I",
+    "date_joined": "2004-01-01",
+    "years_of_service": 22,
+    "postings": [
+      {
+        "station_code": "HUR",
+        "station": "Hurlaven Ness",
+        "station_class": "shore",
+        "from_year": 2004,
+        "to_year": 2007
+      },
+      {
+        "station_code": "TUL",
+        "station": "Tullaghmore Lighthouse",
+        "station_class": "shore",
+        "from_year": 2008,
+        "to_year": 2012
+      },
+      {
+        "station_code": "ARD",
+        "station": "Ardvarra Island",
+        "station_class": "island",
+        "from_year": 2013,
+        "to_year": 2013
+      },
+      {
+        "station_code": "NEV",
+        "station": "Nevisbeg Skerry",
+        "station_class": "rock",
+        "from_year": 2014,
+        "to_year": 2015
+      },
+      {
+        "station_code": "NUA",
+        "station": "Nuallanish Head",
+        "station_class": "shore",
+        "from_year": 2016,
+        "to_year": 2017
+      },
+      {
+        "station_code": "BAL",
+        "station": "Ballaghmona Carrig",
+        "station_class": "rock",
+        "from_year": 2019,
+        "to_year": 2026
+      }
+    ]
+  },
+  "pathwaySchemes": [
+    {
+      "code": "OSSC",
+      "renewal_years": 4,
+      "modules": [
+        {
+          "code": "OSSC-SS",
+          "name": "Sea survival and escape"
+        },
+        {
+          "code": "OSSC-FF",
+          "name": "Fire prevention and response"
+        },
+        {
+          "code": "OSSC-FA",
+          "name": "First aid and casualty handling"
+        },
+        {
+          "code": "OSSC-HL",
+          "name": "Helicopter landing area operations"
+        },
+        {
+          "code": "OSSC-CS",
+          "name": "Confined space entry and rescue"
+        }
+      ]
+    },
+    {
+      "code": "WAHS",
+      "renewal_years": 3,
+      "modules": [
+        {
+          "code": "WAHS-1",
+          "name": "Height safety and fall arrest"
+        },
+        {
+          "code": "WAHS-2",
+          "name": "Ladder and tower climbing"
+        },
+        {
+          "code": "WAHS-3",
+          "name": "Rope access level 1"
+        },
+        {
+          "code": "WAHS-4",
+          "name": "Tower rescue and casualty recovery"
+        }
+      ]
+    }
+  ],
+  "gradeHistory": [
+    {
+      "from_year": 2004,
+      "grade": "Supernumerary Keeper"
+    },
+    {
+      "from_year": 2010,
+      "grade": "Keeper Grade III"
+    },
+    {
+      "from_year": 2015,
+      "grade": "Keeper Grade II"
+    },
+    {
+      "from_year": 2023,
+      "grade": "Keeper Grade I"
+    }
+  ],
+  "recentTraining": [
+    {
+      "scheme": "HVAP",
+      "module": "HVAP-01",
+      "module_name": "Switching principles and system knowledge",
+      "year": 2026,
+      "outcome": "completed"
+    },
+    {
+      "scheme": "RCOM",
+      "module": "RCOM-AT",
+      "module_name": "Aids to navigation telemetry",
+      "year": 2024,
+      "outcome": "completed"
+    },
+    {
+      "scheme": "MPMC",
+      "module": "MPMC-D",
+      "module_name": "Planned maintenance practice",
+      "year": 2022,
+      "outcome": "completed"
+    },
+    {
+      "scheme": "RCOM",
+      "module": "RCOM-MET",
+      "module_name": "Meteorological observing and reporting",
+      "year": 2022,
+      "outcome": "completed"
+    },
+    {
+      "scheme": "OSSC",
+      "module": "OSSC-SS",
+      "module_name": "Sea survival and escape",
+      "year": 2020,
+      "outcome": "completed"
+    },
+    {
+      "scheme": "OSSC",
+      "module": "OSSC-CS",
+      "module_name": "Confined space entry and rescue",
+      "year": 2019,
+      "outcome": "completed"
+    }
+  ],
+  "certifications": [
+    {
+      "scheme": "OSSC",
+      "modules_held": [
+        "OSSC-CS",
+        "OSSC-FF",
+        "OSSC-HL",
+        "OSSC-SS"
+      ],
+      "complete": false,
+      "valid_2026": false
+    }
+  ]
+}

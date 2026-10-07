@@ -1,0 +1,205 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens.
+ *
+ * Values are the Figma file's variables (Simple Design System, `sds-*`) — each
+ * token names the variable it mirrors — plus the two surface colours the file
+ * sets directly. Tailwind's default palette and type scale are cleared, so
+ * these are the only colours and sizes that exist.
+ */
+@theme {
+  --font-sans:
+    'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Noto Color Emoji';
+
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-canvas: #f5f5f5; /* background/default/secondary — page, chips, inset rows */
+  --color-canvas-hover: #e6e6e6; /* background/default/secondary-hover */
+  --color-surface: #ffffff; /* background/default/default — cards, sidebar */
+  --color-field-focus: #b2b2b2; /* record-update textarea focus border */
+  --color-line: #d9d9d9; /* border/default/default */
+  --color-ink: #2c2c2c; /* text/brand/default */
+  --color-ink-secondary: #444444; /* text/brand/secondary */
+  --color-ink-tertiary: #767676; /* text/neutral/tertiary */
+  --color-ink-faint: #b3b3b3; /* background/default/tertiary-hover — breadcrumb separator */
+  --color-icon-tertiary: #757575; /* icon/brand/tertiary */
+  --color-action: #1e1e1e; /* shared dark primary CTA */
+  --color-action-hover: var(--color-neutral-action-hover);
+  --color-on-action: #ffffff;
+  --color-neutral-action: #1e1e1e; /* background/brand/hover — the evidence modal's primary */
+  --color-neutral-action-hover: #2c2c2c;
+  --color-ink-strong: #1e1e1e; /* text/default/default — outline button label */
+  --color-ink-neutral: #303030; /* text/neutral/default — kind-of-work rows */
+  --color-ink-muted: #5a5a5a; /* text/neutral/secondary — evidence summary, modal icons */
+  --color-scrim: rgb(67 67 67 / 0.4); /* modal backdrop */
+  --color-on-ink: #f3f3f3; /* text/neutral/on-neutral — text on dark pills */
+  --color-on-positive: #02542d; /* completed pathway status — text/positive/default */
+  --color-positive: #009951; /* request sent — check */
+  --color-positive-wash: #cff7d3; /* background/positive/tertiary-hover */
+
+  /* Fit summary card. */
+  --color-summary: #3b1520;
+  --color-on-summary: #f5f5f5; /* text/brand/on-brand */
+  --color-on-summary-muted: #f3f3f3; /* text/neutral/on-neutral */
+
+  /* Active application tracker navigation. */
+  --color-tracker: #fff1c2; /* background/warning/secondary */
+
+  /* Active jobs navigation. */
+  --color-openings: #d95e30;
+
+  /* Application path card. */
+  --color-path: #8bd0e4;
+  --color-on-path: #01042a;
+  --color-on-path-muted: rgb(1 4 42 / 0.64);
+
+  /*
+   * Type ramp — the Figma text styles, on Tailwind's own size names so that
+   * class merging and copied-in shadcn components understand them.
+   */
+  --text-*: initial;
+  --text-sm: 0.875rem; /* Body Small, 14/1.4 */
+  --text-sm--line-height: 1.4;
+  --text-base: 1rem; /* Body Base, 16/1.4 */
+  --text-base--line-height: 1.4;
+  --text-lg: 1.25rem; /* section subheading, 20/1.4 */
+  --text-lg--line-height: 1.4;
+  --text-xl: 1.5rem; /* section heading, 24/1.2 */
+  --text-xl--line-height: 1.2;
+  --text-xl--letter-spacing: -0.02em;
+  --text-2xl: 2rem; /* page title, 32/1.2 */
+  --text-2xl--line-height: 1.2;
+
+  /* Radii are Tailwind's defaults, which already match the Figma: cards 3xl (24), controls xl (12), insets lg (8). */
+
+  --shadow-raised: 0 1px 4px 0 rgb(12 12 13 / 0.05); /* Drop Shadow/100 */
+
+  /* Below md, the space the fixed tab bar takes: a 56px bar plus its 16px inset. */
+  --spacing-tabbar: 4.5rem;
+
+  --animate-tooltip-in: tooltip-in 150ms ease-out;
+  --animate-pop-in: pop-in 150ms ease-out;
+
+  @keyframes tooltip-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ink);
+    outline-offset: 2px;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/*
+ * Material Symbols Outlined, at the brief's settings: weight 300, fill 0,
+ * grade 0, optical size 24. <Icon> sets --icon-weight where a design asks for
+ * another weight. The 1em box keeps a not-yet-loaded ligature from spilling
+ * out as text.
+ */
+@utility icon {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  font-family: 'Material Symbols Outlined';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  direction: ltr;
+  user-select: none;
+  font-feature-settings: 'liga';
+  font-variation-settings:
+    'FILL' 0,
+    'wght' var(--icon-weight, 300),
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/*
+ * The employer's posting, at the Figma's rhythm. Spacing between blocks is a
+ * blank line of body text (16/1.4 = 1.4rem), two before a section that follows
+ * prose, and a 12px step between paragraphs.
+ */
+@layer components {
+  .posting > * + * {
+    margin-top: 0.75rem;
+  }
+
+  .posting h2 {
+    font-size: var(--text-xl);
+    line-height: var(--text-xl--line-height);
+    letter-spacing: var(--text-xl--letter-spacing);
+    font-weight: 600;
+  }
+
+  .posting h3 {
+    font-size: var(--text-lg);
+    line-height: var(--text-lg--line-height);
+    font-weight: 600;
+  }
+
+  .posting ul {
+    list-style: disc;
+    padding-inline-start: 1.5rem;
+  }
+
+  .posting li + li {
+    margin-top: 0.25rem;
+  }
+
+  .posting h2 + * {
+    margin-top: 1.4rem;
+  }
+
+  .posting h2 + h3 {
+    margin-top: 2.1rem;
+  }
+
+  .posting p + h2 {
+    margin-top: 2.8rem;
+  }
+
+  .posting ul + h2,
+  .posting ul + h3 {
+    margin-top: 1.4rem;
+  }
+}

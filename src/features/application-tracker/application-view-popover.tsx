@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import viewCaret from '@/assets/application-view-caret.svg';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -19,18 +20,18 @@ export function ApplicationViewPopover() {
         className="w-[331px] max-w-[calc(100vw-32px)] p-3 motion-reduce:animate-none"
       >
         <div className="flex flex-col">
-          <a
-            href={routes.openingRole}
+          <Link
+            to={routes.openingRole}
             className="flex h-11 items-center rounded-xl p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
           >
             Job details
-          </a>
-          <a
-            href={routes.applicationProfile}
+          </Link>
+          <Link
+            to={routes.applicationProfile}
             className="flex h-11 items-center rounded-xl p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
           >
             Your application
-          </a>
+          </Link>
         </div>
       </PopoverContent>
     </Popover>

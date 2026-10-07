@@ -38,7 +38,7 @@ export function AppShell({ current, breadcrumb, headerClassName, children }: App
     );
     observer.observe(gap);
     return () => observer.disconnect();
-  }, []);
+  }, [headerClassName]);
 
   return (
     <div className="flex min-h-dvh">

@@ -97,7 +97,7 @@ export function RolePage() {
   };
 
   return (
-    <main className="flex-1 px-6 pb-8">
+    <main tabIndex={-1} className="outline-none flex-1 px-6 pb-8">
       {/*
         One column on small screens, with the fit summary moved to the top.
         From lg the posting takes the left column and the cards stack beside

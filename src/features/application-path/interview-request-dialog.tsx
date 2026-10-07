@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import type { ComponentProps } from 'react';
 import interviewCheck from '@/assets/interview-request-check.svg';
 import interviewClose from '@/assets/interview-request-close.svg';
@@ -23,7 +24,7 @@ export function InterviewRequestDialog(props: InterviewRequestDialogProps) {
       closeIcon={<img src={interviewClose} width={24} height={24} alt="" />}
       action={
         <Button asChild variant="neutral">
-          <a href={routes.applicationTracker}>Track my application</a>
+          <Link to={routes.applicationTracker}>Track my application</Link>
         </Button>
       }
     />

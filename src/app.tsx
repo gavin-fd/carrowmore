@@ -1,3 +1,5 @@
+import { Route, Routes, useLocation } from 'react-router';
+import { usePageNavigation } from '@/hooks/use-page-navigation';
 import { AppShell } from '@/components/layout/app-shell';
 import type { Crumb } from '@/components/layout/page-header';
 import { posting } from '@/data/role';
@@ -8,7 +10,8 @@ import { RolePage } from '@/features/role/role-page';
 import { routes } from '@/lib/routes';
 
 export function App() {
-  const pathname = window.location.pathname.replace(/\/$/, '') || '/';
+  const location = useLocation();
+  const pathname = location.pathname.replace(/\/$/, '') || '/';
   const applicationPath = pathname === routes.applicationPath;
   const openingRole = pathname === routes.openingRole;
   const applicationProfile = pathname === routes.applicationProfile;
@@ -35,6 +38,18 @@ export function App() {
     ];
   }
 
+  usePageNavigation(
+    applicationPath
+      ? 'Application path'
+      : applicationProfile
+        ? 'Your application profile'
+        : applicationTracker
+          ? 'Application Tracker'
+          : openingRole
+            ? `${posting.title} · All openings`
+            : `${posting.title} · Suggested Roles`,
+  );
+
   return (
     <AppShell
       current={
@@ -49,15 +64,14 @@ export function App() {
       headerClassName={applicationPath || applicationTracker ? 'pt-6' : undefined}
       breadcrumb={breadcrumb}
     >
-      {applicationPath ? (
-        <ApplicationPathPage />
-      ) : applicationProfile ? (
-        <ApplicationProfilePage />
-      ) : applicationTracker ? (
-        <ApplicationTrackerPage />
-      ) : (
-        <RolePage />
-      )}
+      <Routes key={pathname}>
+        <Route path={routes.suggestedRole} element={<RolePage />} />
+        <Route path={routes.openingRole} element={<RolePage />} />
+        <Route path={routes.applicationPath} element={<ApplicationPathPage />} />
+        <Route path={routes.applicationTracker} element={<ApplicationTrackerPage />} />
+        <Route path={routes.applicationProfile} element={<ApplicationProfilePage />} />
+        <Route path="*" element={<RolePage />} />
+      </Routes>
     </AppShell>
   );
 }

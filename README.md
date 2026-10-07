@@ -23,6 +23,7 @@ Pathway progress persists in `sessionStorage` for the current tab and role. Trac
 | Library | Purpose |
 | --- | --- |
 | React 19 / React DOM | Components and local interaction state |
+| React Router | Client-side navigation with a persistent layout and browser history |
 | TypeScript 7 | Application and data-pipeline types |
 | Vite 8 | Development server and static production build |
 | Tailwind CSS 4 | Styling and shared design tokens |
@@ -51,6 +52,8 @@ Open the local URL printed by Vite. The default port is 5173; Vite selects the n
 | `npm run build` | Type-check and create the static build in `dist/` |
 | `npm run preview` | Serve the production build locally |
 | `npm run derive` | Regenerate the evidence, application-profile data and `SKILL-MAP.md` |
+
+Internal links change the page content without reloading the document. The sidebar and header stay mounted; new destinations start at the top, and Back/Forward restores the previous scroll position. Page titles and keyboard focus update with navigation.
 
 Routes: `/` (suggested role), `/openings/wind-turbine-technician`, `/application-path`, `/application-tracker` and `/application-tracker/wind-turbine-technician`.
 

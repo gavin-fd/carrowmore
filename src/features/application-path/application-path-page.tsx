@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, m, useReducedMotion } from 'motion/react';
 import { EmployerMark } from '@/components/employer-mark';
@@ -86,7 +87,7 @@ export function ApplicationPathPage() {
   };
 
   return (
-    <main className="flex-1 px-4 pb-8 md:px-6">
+    <main tabIndex={-1} className="outline-none flex-1 px-4 pb-8 md:px-6">
       <article
         aria-labelledby="application-path-title"
         className="mx-auto flex max-w-[1041px] flex-col gap-10 rounded-3xl bg-surface px-4 py-6 sm:px-8 sm:py-10"
@@ -103,7 +104,7 @@ export function ApplicationPathPage() {
               </p>
             </div>
             <Button asChild variant="outline" className="h-[38px]">
-              <a href={routes.openingRole}>Job details</a>
+              <Link to={routes.openingRole}>Job details</Link>
             </Button>
           </div>
           <div className="flex flex-col gap-2">

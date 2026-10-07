@@ -44,7 +44,7 @@ export function usePrototypeApplication() {
     submit() {
       if (!stepIds.every((id) => snapshot.completed.includes(id))) return;
       const next = { ...snapshot, submittedYear: new Date().getFullYear() };
-      // Save synchronously because the modal's action performs a normal page navigation.
+      // Make the submitted snapshot available before the tracker route reads it.
       save(next);
       setSnapshot(next);
     },

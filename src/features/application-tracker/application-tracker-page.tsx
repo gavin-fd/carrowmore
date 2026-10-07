@@ -28,7 +28,7 @@ function ApplicationCard() {
 
 export function ApplicationTrackerPage() {
   return (
-    <main className="flex-1 px-4 pb-8 md:px-6">
+    <main tabIndex={-1} className="outline-none flex-1 px-4 pb-8 md:px-6">
       <h1 className="sr-only">Application Tracker</h1>
       <div className="mx-auto flex max-w-[1041px] flex-col gap-9">
         {applicationStages.map((stage, index) => (

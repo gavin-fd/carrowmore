@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import profileDivider from '@/assets/profile-divider.svg';
 import metaDivider from '@/assets/profile-meta-divider.svg';
 import recordCheck from '@/assets/profile-record-check.svg';
@@ -67,7 +68,7 @@ export function ApplicationProfilePage() {
   );
 
   return (
-    <main className="flex-1 px-4 pb-8 md:px-6">
+    <main tabIndex={-1} className="outline-none flex-1 px-4 pb-8 md:px-6">
       <div className="mx-auto flex max-w-[686px] flex-col gap-8">
         <section
           aria-labelledby="application-profile-title"
@@ -83,7 +84,7 @@ export function ApplicationProfilePage() {
             </p>
           </div>
           <Button asChild variant="neutral" className="h-[38px]">
-            <a href={routes.suggestedRole}>View more suggested roles</a>
+            <Link to={routes.suggestedRole}>View more suggested roles</Link>
           </Button>
         </section>
 

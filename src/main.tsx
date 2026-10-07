@@ -1,4 +1,5 @@
 import { StrictMode } from 'react';
+import { BrowserRouter } from 'react-router';
 import { createRoot } from 'react-dom/client';
 import { LazyMotion, MotionConfig, domAnimation } from 'motion/react';
 import { App } from '@/app';
@@ -12,7 +13,9 @@ createRoot(document.getElementById('root')!).render(
       {/* Animation features only, loaded once; `strict` keeps components on the light `m` API. */}
       <LazyMotion features={domAnimation} strict>
         <TooltipProvider>
-          <App />
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
         </TooltipProvider>
       </LazyMotion>
     </MotionConfig>

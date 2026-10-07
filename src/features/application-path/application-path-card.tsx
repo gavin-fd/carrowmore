@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Icon } from '@/components/icon';
 import { Button } from '@/components/ui/button';
 import { applicationPathSteps } from '@/data/application-path';
@@ -24,7 +25,7 @@ export function summariseRoute(steps: Step[]) {
 export function ApplyButton() {
   return (
     <Button asChild>
-      <a href={routes.applicationPath}>Get ready to apply</a>
+      <Link to={routes.applicationPath}>Get ready to apply</Link>
     </Button>
   );
 }

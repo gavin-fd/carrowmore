@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import logoMark from '@/assets/logo-mark.svg';
 import { Icon } from '@/components/icon';
 import type { IconName } from '@/components/icon-names';
@@ -65,8 +66,8 @@ export function Sidebar({ current }: { current: string }) {
           const icon = <Icon name={item.icon} />;
           const control =
             item.kind === 'link' ? (
-              <a
-                href={
+              <Link
+                to={
                   item.id === 'application-paths'
                     ? routes.applicationPath
                     : item.id === 'application-tracker'
@@ -88,7 +89,7 @@ export function Sidebar({ current }: { current: string }) {
                 )}
               >
                 {icon}
-              </a>
+              </Link>
             ) : (
               <button type="button" aria-label={item.label} className={itemClass}>
                 {icon}

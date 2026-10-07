@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import type { Ref } from 'react';
 import { Icon } from '@/components/icon';
 import { cn } from '@/lib/utils';
@@ -38,8 +39,8 @@ export function PageHeader({ breadcrumb, contentBeneath, className, ref }: PageH
           {breadcrumb.map((crumb, i) => (
             <li key={crumb.label} className="flex items-center gap-2">
               {i > 0 && <Icon name="arrow_forward_ios" size={16} className="text-ink-faint" />}
-              <a
-                href={crumb.href}
+              <Link
+                to={crumb.href}
                 aria-current={i === breadcrumb.length - 1 ? 'page' : undefined}
                 className={cn(
                   'transition-colors hover:text-ink',
@@ -47,7 +48,7 @@ export function PageHeader({ breadcrumb, contentBeneath, className, ref }: PageH
                 )}
               >
                 {crumb.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ol>

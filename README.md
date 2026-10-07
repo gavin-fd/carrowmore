@@ -1,6 +1,6 @@
 # Carrowmore
 
-**[Live prototype](https://gavin-fd.github.io/carrowmore/)** · **[Figma design](https://www.figma.com/design/qLgNrSalE6KPHeLjS2WueH/Carrowmore?node-id=0-1)** · **[Loom walkthrough](https://www.loom.com/share/796deb8f0f1d49c09cc4d3602c465ae7)**
+**[Live Prototype](https://gavin-fd.github.io/carrowmore/)** · **[Figma design](https://www.figma.com/design/qLgNrSalE6KPHeLjS2WueH/Carrowmore?node-id=0-1)** · **[Loom walkthrough](https://www.loom.com/share/796deb8f0f1d49c09cc4d3602c465ae7)**
 
 A career-transition prototype for the fictional Carrowmore Light Authority, where 340 lighthouse keepers face automation.
 

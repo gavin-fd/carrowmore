@@ -21,13 +21,13 @@ export function ApplicationViewPopover() {
         <div className="flex flex-col">
           <a
             href={routes.openingRole}
-            className="flex h-11 items-center rounded-lg p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
+            className="flex h-11 items-center rounded-xl p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
           >
             Job details
           </a>
           <a
             href={routes.applicationProfile}
-            className="flex h-11 items-center rounded-lg p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
+            className="flex h-11 items-center rounded-xl p-3 text-sm leading-none font-semibold text-ink-strong transition-colors outline-none hover:bg-canvas focus-visible:bg-canvas"
           >
             Your application
           </a>

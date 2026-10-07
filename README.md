@@ -1,6 +1,6 @@
 # Carrowmore
 
-**[Figma design](https://www.figma.com/design/qLgNrSalE6KPHeLjS2WueH/Carrowmore?node-id=0-1)** · **Loom walkthrough:** link to be added
+**[Figma design](https://www.figma.com/design/qLgNrSalE6KPHeLjS2WueH/Carrowmore?node-id=0-1)** · **[Loom walkthrough](https://www.loom.com/share/4e2e4c7939344fd5b2ce4a4111f8eec7)**
 
 A career-transition prototype for the fictional Carrowmore Light Authority, where 340 lighthouse keepers face automation.
 
